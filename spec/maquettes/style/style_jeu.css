@@ -1,0 +1,81 @@
+body {
+    margin:0;
+    min-height:100vh;
+    background-image:linear-gradient(to bottom right,purple,blue);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;}
+
+.navbar {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+    background:transparent;
+    padding:15px 30px;
+    backdrop-filter:blur(25px);
+    border-radius:0px 0px 15px 15px;
+}
+
+.nav_links{
+    list-style:none;
+    display:flex;
+    gap:25px;
+    margin:0;
+    padding:10px;
+    
+}
+
+.nav_links a  {
+    text-decoration:none;
+}
+
+.nav_links a:hover {
+    border-radius:5px;
+}
+
+.navbar a {
+    text-decoration:none;
+    color:white;
+}
+
+.nav_links button {
+    padding:1em 2em;
+    border:none;
+    border-radius:100px;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+.nav_links button::after {
+    content:'';
+    position:absolute;
+    height:109%;
+    width:103%;
+    border-radius:1000px;
+    background-image:linear-gradient(to bottom right,#008cff,#e100ff);
+    z-index:-1;
+}
+
+.nav_links button:hover {
+    z-index:0;
+    box-shadow:40px 0 100px #008cff,-40px 0 100px #e100ffbb;
+}
+
+.ecran_jeu{
+    color:white;
+    border:1px solid white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:97%;
+    height:500px;
+    margin:50px 20px;
+}
