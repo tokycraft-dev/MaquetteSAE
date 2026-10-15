@@ -10,7 +10,11 @@
 	<header id="entete">
         	<nav id="nav_horizontale">
             	<ul>
-                	<li><img src="public/images/photoProfilAnonyme.png" alt="Photo de profil" width=500 height=500 id="imageProfil"></li>
+                	<li>
+						<label for="clic-profil">
+							<img src="public/images/photoProfilAnonyme.png" alt="Photo de profil" width=500 height=500 id="imageProfil">
+						</label>
+					</li>
                 	<li><h1>Bonjour &ltUtilisateur&gt</h1></li>
             	</ul>
             	<ul id="menu">
@@ -30,10 +34,10 @@
   		<input type="radio" id="clic-déconnexion" name="clic-parametres">
 		<nav id="nav_verticale">
 			<ul>
-				<li><label for="clic-compte">Compte</label></li>
-      			<li><label for="clic-profil">Profil</label></li>
-      			<li><label for="clic-preferences">Préférences</label></li>
-      			<li><label for="clic-déconnexion">Déconnexion</label></li>
+				<li class="lien_navigation"><label for="clic-compte">Compte</label></li>
+      			<li class="lien_navigation"><label for="clic-profil">Profil</label></li>
+      			<li class="lien_navigation"><label for="clic-preferences">Préférences</label></li>
+      			<li class="lien_navigation" id="dernier"><label for="clic-déconnexion">Déconnexion</label></li>
 			</ul>
 		</nav>
 
@@ -43,16 +47,16 @@
 				<form>
 					<div>
 						<p> Nom d'utilisateur: &ltUtilisateur&gt </p>
-						<button type"button"> Modifier </button>
+						<button type"button" class="modification"> <img src="public/images/modification.png" width=420 height="420"> </button>
 					</div>
 					<div>
 						<p> E-mail: &ltUtilisateur@gmail.com&gt </p>
-						<button type"button"> Modifier </button>
+						<button type"button" class="modification"> <img src="public/images/modification.png" width=420 height="420"> </button>
 					</div>
 					<div>
 						<p> Mot de passe: &lt**********&gt </p>
-						<button type"button"> Voir </button>
-						<button type"button"> Modifier </button>
+						<button type"button" class="visibilité"> <img src="public/images/visibilité.png" width=315 height="315"> </button>
+						<button type"button" class="modification"> <img src="public/images/modification.png" width=420 height="420"> </button>
 					</div>
 				</form>
 			</section> 
@@ -60,19 +64,19 @@
 				<h2> Paramètrage du profil </h2>
 				<form>
 					<div>
-						<p> Photo de profil: <img src="public/images/photoProfilAnonyme.png" alt="Photo de profil"> </p>
-						<button type"button"> Modifier </button>
+						<p> Photo de profil: <img src="public/images/photoProfilAnonyme.png" alt="Photo de profil" width=500 height=500 id="imageProfilParamètres"> </p>
+						<button type"button" class="modification"> <img src="public/images/modification.png" width=420 height="420"> </button>
 					</div>
 					<div>
 						<p> Description: </p>
 						<div>
 							<p> description utilisateur </p>
 						</div>
-						<button type"button"> Modifier </button>
+						<button type"button" class="modification"> <img src="public/images/modification.png" width=420 height="420"> </button>
 					</div>
 					<div>
 						<p> Pseudo: &ltUser&gt </p>
-						<button type"button"> Modifier </button>
+						<button type"button" class="modification"> <img src="public/images/modification.png" width=420 height="420"> </button>
 					</div>
 				</form>
 			</section> 
@@ -81,11 +85,11 @@
 				<form>
 					<div>
 						<p> Thème: <img src="public/images/thèmePlaceHolder.png" alt="thème de couleur du site"> </p>
-						<button type"button"> Modifier </button>
+						<button type"button" class="modification"> <img src="public/images/modification.png" width=420 height="420"> </button>
 					</div>
 					<div>
 						<p> Visibilité dans le leaderboard: oui </p>
-						<button type"button"> Modifier </button>
+						<button type"button" class="modification"> <img src="public/images/modification.png" width=420 height="420"> </button>
 					</div>
 				</form>
 			</section> 
@@ -93,10 +97,10 @@
 				<h2> Déconnexion </h2>
 				<form>
 					<div>
-						<button type"button"> Se déconnecter </button>
+						<button type"button" id="bouton_déconnexion"> Se déconnecter </button>
 					</div>
 					<div>
-						<button type"button"> Supprimer le compte </button>
+						<button type"button" id="bouton_supression"> Supprimer le compte </button>
 					</div>
 				</form>
 			</section> 
