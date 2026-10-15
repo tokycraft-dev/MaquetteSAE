@@ -5,9 +5,20 @@
 }
 
 body {
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
     background: linear-gradient(#0b0120, #2a0b4e 38%,#b3127a 56%, #ff6a3d 60%, #0b0120 60%);
+    background-attachment: fixed;
+}
+
+
+
+.stars {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
 }
 
 .sun {
@@ -15,7 +26,7 @@ body {
     aspect-ratio: 1;
     background: linear-gradient(#ffd319,#ff901f 35%, #ff2975 65%, #f222ff);
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 60%;
     translate: -50% -72%;
@@ -31,7 +42,7 @@ body {
     12%, 37% 55%, 46% 28%, 54% 62%, 63% 18%, 73% 52%, 82% 22%, 
     91% 58%, 100% 32%, 100% 100%);
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 40%;
 }
 
@@ -43,7 +54,7 @@ body {
         96%) 0 0 / 48px 100%,
             #0b0120;
     width: 200%;
-    position: absolute;
+    position: fixed;
     top: 60%;
     left: -50%;
     transform-origin: top;
@@ -57,13 +68,14 @@ body {
 
 h1 {
     color: transparent;
-    font: italic 900 9vmin 'Orbitron', sans-sherif;
+    font: italic 900 9vmin 'Orbitron', sans-serif;
     text-align: center;
     position: relative;
     margin-top: 12vh;
     background: linear-gradient(#fff 35%, #2de2e6 50%, 
     #f222ff 50%, #ffd319 90%);
     -webkit-background-clip: text;
+    background-clip: text;
     filter: drop-shadow(0 0 14px #f222ff);
 }
 
@@ -77,4 +89,147 @@ h1 {
 
 @keyframes twinkle {
     to { opacity: 0.15;}
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 60px;
+    padding: 0 clamp(14px, 4vw, 40px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: rgba(11, 1, 32, 0.3);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.logo {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.05rem;
+    text-decoration: none;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    gap: 4px;
+}
+
+.nav-links a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: color 0.2s, background 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-actions {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    padding: 9px 18px;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.btn-ghost {
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
+}
+
+.btn-ghost:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #fff;
+}
+
+.btn-main {
+    color: #fff;
+    border: 1px solid #ff2ef5;
+    background: rgba(255, 46, 245, 0.25);
+}
+
+.btn-main:hover {
+    background: rgba(255, 46, 245, 0.5);
+}
+
+
+
+.catalog {
+    position: relative;
+    max-width: 1100px;
+    margin: 6vh auto 0;
+    padding: 0 clamp(14px, 4vw, 40px) 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: rgba(11, 1, 32, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.card:hover {
+    border-color: rgba(255, 255, 255, 0.55);
+    background: rgba(11, 1, 32, 0.4);
+}
+
+.cover {
+    height: 130px;
+    background: rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.info {
+    padding: 14px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info h2 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+
+
+@media (max-width: 720px) {
+    .nav-links { display: none; }
+    .logo { font-size: 0.9rem; }
+    .btn { padding: 8px 12px; }
 }
