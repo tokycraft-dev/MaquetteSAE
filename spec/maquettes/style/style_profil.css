@@ -1,0 +1,120 @@
+html{
+    background-color: #17171f;
+}
+
+#nav_horizontale{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.15em solid #310075;
+}
+
+#nav_horizontale ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    width: 80%;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+#nav_verticale ul{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+    width: 33%;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+#nav_verticale ul li label{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#menu{
+    justify-content: flex-end;
+    margin-right: 2em;
+}
+
+#nav_horizontale ul li a{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+p{
+    color: #ffffff;
+}
+
+h1{
+    color: #ffffff;
+}
+
+h2{
+    color: #ffffff;
+}
+
+#imageProfil{
+    width: 10em;
+    height: auto;
+}
+
+#imageLogo{
+    width: 5em;
+    height: auto;
+}
+
+#paramètres{
+    display: flex;
+    flex-direction: row;
+}
+
+#nav_verticale{
+    border-right: 0.15em solid #310075;
+    width: 25%;
+}
+
+footer {
+    border-top: 0.15em solid #310075;
+}
+
+input[type="radio"][name="clic-parametres"] {
+    display: none;
+}
+
+.section_paramètre {
+    display: none;
+}
+
+#clic-compte:checked ~ #contenu_paramètre #compte { 
+    display: block; 
+}
+
+#clic-profil:checked ~ #contenu_paramètre #profil { 
+    display: block; 
+}
+
+#clic-preferences:checked ~ #contenu_paramètre #preferences { 
+    display: block; 
+}
+
+#clic-déconnexion:checked ~ #contenu_paramètre #déconnexion { 
+    display: block; 
+}
+
+#clic-compte:checked ~ #nav_verticale label[for="clic-compte"],
+#clic-profil:checked ~ #nav_verticale label[for="clic-profil"],
+#clic-preferences:checked ~ #nav_verticale label[for="clic-preferences"],
+#clic-déconnexion:checked ~ #nav_verticale label[for="clic-déconnexion"] {
+    color: #00e5ff;
+    font-weight: bold;
+}
