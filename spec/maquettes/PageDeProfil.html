@@ -1,106 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="style/style_profil.css">
+
 </head>
 <body>
 	<header id="entete">
-        	<nav>
+        	<nav id="nav_horizontale">
             	<ul>
-                	<li><img src="public/images/photoProfilAnonyme.png" alt="Photo de profil"></li>
-                	<li><p>Bonjour &ltUtilisateur&gt</p></li>
+                	<li><img src="public/images/photoProfilAnonyme.png" alt="Photo de profil" width=500 height=500 id="imageProfil"></li>
+                	<li><h1>Bonjour &ltUtilisateur&gt</h1></li>
             	</ul>
-            	<ul class="menu">
+            	<ul id="menu">
                 	<li >
-				<a href="index.html">
-  					<img src="public/images/logoPlaceHolder.png" alt="Logo vers le menu">
-				</a>
-			</li>
+						<a href="index.html">
+  							<img src="public/images/logoPlaceHolder.png" alt="Logo vers le menu" width=216 height=222 id="imageLogo">
+						</a>
+					</li>
             	</ul>
-        	</nav>
-    	</header>
+        </nav>
+    </header>
 
-	<div>
-		<nav>
+	<div id = "paramètres">
+		<input type="radio" id="clic-compte" name="clic-parametres" checked>
+  		<input type="radio" id="clic-profil" name="clic-parametres">
+ 		<input type="radio" id="clic-preferences" name="clic-parametres">
+  		<input type="radio" id="clic-déconnexion" name="clic-parametres">
+		<nav id="nav_verticale">
 			<ul>
-				<li><a href="">Compte</a></li>
-				<li><a href="">Profil</a></li>
-				<li><a href="">Préférences</a></li>
-				<li><a href="">Déconnexion</a></li>
+				<li><label for="clic-compte">Compte</label></li>
+      			<li><label for="clic-profil">Profil</label></li>
+      			<li><label for="clic-preferences">Préférences</label></li>
+      			<li><label for="clic-déconnexion">Déconnexion</label></li>
 			</ul>
 		</nav>
 
-		<section id="compte">
-			<h1> Paramètrage du compte </h1>
-			<form>
-				<div>
-					<p> Nom d'utilisateur: &ltUtilisateur&gt </p>
-					<button type"button"> Modifier </button>
-				</div>
-				<div>
-					<p> E-mail: &ltUtilisateur@gmail.com&gt </p>
-					<button type"button"> Modifier </button>
-				</div>
-				<div>
-					<p> Mot de passe: &lt**********&gt </p>
-					<button type"button"> Voir </button>
-					<button type"button"> Modifier </button>
-				</div>
-			</form>
-		</section> 
-		<section id="Profil">
-			<h1> Paramètrage du profil </h1>
-			<form>
-				<div>
-					<p> Photo de profil: <img src="public/images/photoProfilAnonyme.png" alt="Photo de profil"> </p>
-					<button type"button"> Modifier </button>
-				</div>
-				<div>
-					<p> Description: </p>
+		<div id="contenu_paramètre">
+			<section id="compte" class="section_paramètre">
+				<h2> Paramètrage du compte </h2>
+				<form>
 					<div>
-						<p> description utilisateur </p>
+						<p> Nom d'utilisateur: &ltUtilisateur&gt </p>
+						<button type"button"> Modifier </button>
 					</div>
-					<button type"button"> Modifier </button>
-				</div>
-				<div>
-					<p> Pseudo: &ltUser&gt </p>
-					<button type"button"> Modifier </button>
-				</div>
-			</form>
-		</section> 
-		<section id="preferences">
-			<h1> Paramètrage des préférences </h1>
-			<form>
-				<div>
-					<p> Thème: <img src="public/images/thèmePlaceHolder.png" alt="thème de couleur du site"> </p>
-					<button type"button"> Modifier </button>
-				</div>
-				<div>
-					<p> Visibilité dans le leaderboard: oui </p>
-					<button type"button"> Modifier </button>
-				</div>
-			</form>
-		</section> 
-		<section id="Déconnexion">
-			<h1> Déconnexion </h1>
-			<form>
-				<div>
-					<button type"button"> Se déconnecter </button>
-				</div>
-				<div>
-					<button type"button"> Supprimer le compte </button>
-				</div>
-			</form>
-		</section> 
+					<div>
+						<p> E-mail: &ltUtilisateur@gmail.com&gt </p>
+						<button type"button"> Modifier </button>
+					</div>
+					<div>
+						<p> Mot de passe: &lt**********&gt </p>
+						<button type"button"> Voir </button>
+						<button type"button"> Modifier </button>
+					</div>
+				</form>
+			</section> 
+			<section id="profil" class="section_paramètre">
+				<h2> Paramètrage du profil </h2>
+				<form>
+					<div>
+						<p> Photo de profil: <img src="public/images/photoProfilAnonyme.png" alt="Photo de profil"> </p>
+						<button type"button"> Modifier </button>
+					</div>
+					<div>
+						<p> Description: </p>
+						<div>
+							<p> description utilisateur </p>
+						</div>
+						<button type"button"> Modifier </button>
+					</div>
+					<div>
+						<p> Pseudo: &ltUser&gt </p>
+						<button type"button"> Modifier </button>
+					</div>
+				</form>
+			</section> 
+			<section id="preferences" class="section_paramètre">
+				<h2> Paramètrage des préférences </h2>
+				<form>
+					<div>
+						<p> Thème: <img src="public/images/thèmePlaceHolder.png" alt="thème de couleur du site"> </p>
+						<button type"button"> Modifier </button>
+					</div>
+					<div>
+						<p> Visibilité dans le leaderboard: oui </p>
+						<button type"button"> Modifier </button>
+					</div>
+				</form>
+			</section> 
+			<section id="déconnexion" class="section_paramètre">
+				<h2> Déconnexion </h2>
+				<form>
+					<div>
+						<button type"button"> Se déconnecter </button>
+					</div>
+					<div>
+						<button type"button"> Supprimer le compte </button>
+					</div>
+				</form>
+			</section> 
+		</div>
 	</div>
 
 </body>
 
 
 <footer>
-    <hr>
-    <p>Le pied de la page web</p>
+	<p>Le pied de la page web</p>
 </footer>
 
 </html>
