@@ -57,12 +57,28 @@ p{
     color: #ffffff;
 }
 
-h1{
-    color: #ffffff;
+h1 {
+    color: transparent;
+    font: italic 650 6.5vmin 'Orbitron', sans-serif;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(#fff 35%, #2de2e6 50%, 
+    #f222ff 50%, #ffd319 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    filter: drop-shadow(0 0 14px #f222ff);
 }
 
-h2{
-    color: #ffffff;
+h2 {
+    color: transparent;
+    font: italic 450 4.5vmin 'Orbitron', sans-serif;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(#fff 35%, #2de2e6 50%, 
+    #f222ff 50%, #ffd319 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    filter: drop-shadow(0 0 14px #f222ff);
 }
 
 #imageProfil{
