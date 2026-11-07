@@ -161,12 +161,12 @@ body {
 .wrapper h1{
     /*font-size: 36px;*/
     /*text-align: center;*/
-    color: transparent;
+    color: white;
     font: italic 900 5vmin 'Orbitron', sans-serif;
     text-align: center;
     position: relative;
-    background: linear-gradient(#fff 35%, #2de2e6 50%,
-    #f222ff 50%, #ffd319 90%);
+    /*background: linear-gradient(#fff 35%, #2de2e6 50%,*/
+    /*#f222ff 50%, #ffd319 90%);*/
     -webkit-background-clip: text;
     background-clip: text;
     filter: drop-shadow(0 0 14px #f222ff);
@@ -205,6 +205,47 @@ body {
     font-size : 20px;
 
 }
+
+.nav-actions {
+    justify-self: end;
+    display: flex;
+    gap: 10px;
+}
+
+
+.btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    padding: 9px 18px;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.btn-ghost {
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
+}
+
+.btn-ghost:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #fff;
+}
+
+.btn-main {
+    color: #fff;
+    border: 1px solid #ff2ef5;
+    background: rgba(255, 46, 245, 0.25);
+}
+
+.btn-main:hover {
+    background: rgba(255, 46, 245, 0.5);
+}
+
 
 .wrapper .btn{
     width: 100%;

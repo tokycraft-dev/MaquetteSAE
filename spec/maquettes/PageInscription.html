@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Page de connexion</title>
+
+    <!--Importation de boxicons pour les icons-->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+
+    <!-- Lien vers Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/style_formulaire.css">
+
+
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="sun"></div>
+    <div class="mountains"></div>
+    <div class="grid"></div>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">LOGO</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Catalogue</a>
+            <a href="PagePopulaire.html">Populaires</a>
+            <a href="PageLeaderboard.html">Leaderboard</a>
+
+        </nav>
+
+        <div class="nav-actions">
+            <a href="PageDeConnexion.html" class="btn btn-main">Connexion</a>
+        </div>
+
+    </header>
+
+    <div class="wrapper">
+        <form action="">
+            <h1>Inscription</h1>
+
+            <div class="input-a">
+                <input type="text" name="identifiant" placeholder="Identifiant" required>
+                <i class="bxf bx-user"></i> <!-- icon utilisateur -->
+            </div>
+
+            <div class="input-a">
+                <input type="password" name="motdepasse" placeholder="Mot de passe" required>
+                <i class="bxf bx-lock"></i> <!-- icon cadenas -->
+            </div>
+
+            <button type="submit" class="btn">S'inscrire</button>
+
+        </form>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
