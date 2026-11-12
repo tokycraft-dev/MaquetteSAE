@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Title</title>
 	<link rel="stylesheet" href="style/style_profil.css">
-
+	<?php
+		session_start();
+	?>
 </head>
 <body>
 	<header id="entete">
@@ -16,9 +18,7 @@
 						</label>
 					</li>
 					<?php
-						session_start();
                 		echo "<li><h1>Bonjour ".$_SESSION['login']."</h1></li>";
-						session_close();
 					?>
             	</ul>
             	<ul id="menu">
@@ -51,9 +51,7 @@
 				<form>
 					<div>
 						<?php
-							session_start();
                 			echo "<p> Nom d'utilisateur: ".$_SESSION['login']."</p>";
-							session_close();
 						?>
 						<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
 					</div>
