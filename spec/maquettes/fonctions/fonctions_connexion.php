@@ -62,3 +62,17 @@
         }
         return false;
     }
+
+    function inscription ($login, $mdp, $connexion, $base, $table) {
+        $mdp = md5($mdp);
+        $sql = "INSERT INTO $table (login, mot_de_passe, role) VALUES ('$login', '$mdp', 'joueur')";
+        $db = mysqli_select_db($connexion, $base);
+
+        if ($db) {
+            $result = mysqli_query($connexion, $sql);
+            if ($result) {
+                return 0;
+            }
+        }
+        return 1;
+    }
