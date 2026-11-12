@@ -4,7 +4,7 @@
     if(isset($_POST["identifiant"], $_POST["motdepasse"])){
         $login = $_POST["identifiant"];
         $mdp = $_POST["motdepasse"];
-        $connexion = connecter("localhost","root","");
+        $connexion = connecter("localhost","sae_user","sae_user");
         $base = "sae_db";
         $table = "utilisateur";
         if (in($login, $connexion, $base, $table)){
