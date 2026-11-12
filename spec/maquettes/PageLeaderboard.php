@@ -14,18 +14,18 @@
     <div class="grid"></div>
 
     <header class="navbar">
-        <a href="index.html" class="logo">LOGO</a>
+        <a href="index.php" class="logo">LOGO</a>
 
         <nav class="nav-links">
-            <a href="index.html">Catalogue</a>
-            <a href="PagePopulaire.html">Populaires</a>
-            <a href="PageLeaderboard.html" class="active">Leaderboard</a>
+            <a href="index.php">Catalogue</a>
+            <a href="PagePopulaire.php">Populaires</a>
+            <a href="PageLeaderboard.php" class="active">Leaderboard</a>
             
         </nav>
 
         <div class="nav-actions">
-            <a href="PageDeProfil.html" class="btn btn-ghost">Profil</a>
-            <a href="PageDeConnexion.html" class="btn btn-main">Connexion</a>
+            <a href="PageDeProfil.php" class="btn btn-ghost">Profil</a>
+            <a href="PageDeConnexion.php" class="btn btn-main">Connexion</a>
         </div>
     </header>
 
