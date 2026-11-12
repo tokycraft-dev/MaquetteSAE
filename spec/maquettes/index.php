@@ -24,7 +24,15 @@
         </nav>
 
         <div class="nav-actions">
-            <a href="PageDeProfil.php" class="btn btn-ghost">Profil</a>
+            <?php
+                session_start();
+                if (isset($_SESSION["login"])) {
+                    echo "<a href="PageDeProfil.php" class="btn btn-ghost">Profil</a>";
+                }
+                else {
+                    echo "<a href="PageDeConnexion.php" class="btn btn-ghost">Profil</a>";
+                }
+            ?>
             <a href="PageDeConnexion.php" class="btn btn-main">Connexion</a>
         </div>
     </header>
