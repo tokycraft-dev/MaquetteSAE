@@ -27,9 +27,9 @@
         <a href="index.html" class="logo">LOGO</a>
 
         <nav class="nav-links">
-            <a href="index.html">Catalogue</a>
-            <a href="PagePopulaire.html">Populaires</a>
-            <a href="PageLeaderboard.html">Leaderboard</a>
+            <a href="index.php">Catalogue</a>
+            <a href="PagePopulaire.php">Populaires</a>
+            <a href="PageLeaderboard.php">Leaderboard</a>
 
         </nav>
 
@@ -52,7 +52,7 @@
             <button type="submit" class="btn">Se connecter</button>
 
             <div class="creation_compte">
-                <p>Pas de compte ? <a href="PageInscription.html">Inscription</a></p>
+                <p>Pas de compte ? <a href="PageInscription.php">Inscription</a></p>
 
             </div>
         </form>
