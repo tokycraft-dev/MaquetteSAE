@@ -56,7 +56,7 @@
             $result = mysqli_query($connexion, $sql);
             if ($result) {
                 while ($row = mysqli_fetch_assoc($result)) {
-                    return $row['password'] == md5($mdp);
+                    return $row['mot_de_passe'] == md5($mdp);
                 }
             }
         }
