@@ -14,18 +14,18 @@
     <div class="grid"></div>
 
     <header class="navbar">
-        <a href="index.html" class="logo">LOGO</a>
+        <a href="index.php" class="logo">LOGO</a>
 
         <nav class="nav-links">
-            <a href="index.html">Catalogue</a>
-            <a href="PagePopulaire.html" class="active">Populaires</a>
-            <a href="PageLeaderboard.html">Leaderboard</a>
+            <a href="index.php">Catalogue</a>
+            <a href="PagePopulaire.php" class="active">Populaires</a>
+            <a href="PageLeaderboard.php">Leaderboard</a>
             
         </nav>
 
         <div class="nav-actions">
-            <a href="PageDeProfil.html" class="btn btn-ghost">Profil</a>
-            <a href="PageDeConnexion.html" class="btn btn-main">Connexion</a>
+            <a href="PageDeProfil.php" class="btn btn-ghost">Profil</a>
+            <a href="PageDeConnexion.php" class="btn btn-main">Connexion</a>
         </div>
     </header>
 
@@ -36,7 +36,7 @@
             <div class="cover"></div>
             <div class="info">
                 <h2>JEU POPULAIRE 1</h2>
-                <a href="PageDeJeu1.html" class="btn btn-ghost">Jouer</a>
+                <a href="PageDeJeu1.php" class="btn btn-ghost">Jouer</a>
             </div>
         </article>
 
@@ -44,7 +44,7 @@
             <div class="cover"></div>
             <div class="info">
                 <h2>JEU POPULAIRE 2</h2>
-                <a href="PageDeJeu2.html" class="btn btn-ghost">Jouer</a>
+                <a href="PageDeJeu2.php" class="btn btn-ghost">Jouer</a>
             </div>
         </article>
 
