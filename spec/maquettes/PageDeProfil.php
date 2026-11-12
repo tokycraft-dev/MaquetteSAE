@@ -15,7 +15,9 @@
 							<img src="public/images/photoProfilAnonyme.png" alt="Photo de profil" width=500 height=500 id="imageProfil">
 						</label>
 					</li>
-                	<li><h1>Bonjour &ltUtilisateur&gt</h1></li>
+					<?php
+                		echo "<li><h1>Bonjour " + $_SESSION['login'] + "</h1></li>"
+					?>
             	</ul>
             	<ul id="menu">
                 	<li >
@@ -46,7 +48,9 @@
 				<h2> Paramètrage du compte </h2>
 				<form>
 					<div>
-						<p> Nom d'utilisateur: &ltUtilisateur&gt </p>
+						<?php
+                			echo "<p> Nom d'utilisateur: " + $_SESSION['login'] + "</p>"
+						?>
 						<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
 					</div>
 					<div>
