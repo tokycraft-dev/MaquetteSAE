@@ -99,7 +99,7 @@
 					<div>
 					<a href="controleur/logout.php" class="deconnexion" onclick=
 					"return confirm ('Etes-vous sûr de vouloir vous déconnecter ?');"><button type="button" id="bouton_déconnexion"> Se déconnecter </button></a>
-					</div>					</div>
+					</div>					
 					<div>
 						<button type="button" id="bouton_supression"> Supprimer le compte </button>
 					</div>
