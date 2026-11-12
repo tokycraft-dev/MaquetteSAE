@@ -36,7 +36,7 @@
     </header>
 
     <div class="wrapper">
-        <form action="">
+        <form action="controleur/connexion.php" method="POST">
             <h1>Connexion</h1>
 
             <div class="input-a">
