@@ -8,8 +8,13 @@
         $base = "sae_db";
         $table = "utilisateur";
         if (! in($login, $connexion, $base, $table)){
-            inscription($login, $mdp, $connexion, $base, $table);
-            header("location: ../PageDeConnexion.php?inscription=1");
+            $result = inscription($login, $mdp, $connexion, $base, $table);
+            if ($result == 0) {
+                header("location: ../PageDeConnexion.php?inscription=1");
+            }
+            else {
+                header("location: ../PageInscription.php?erreur=2");
+            }
         }
         else {
             header("Location: ../PageInscription.php?erreur=1");
