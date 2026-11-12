@@ -24,17 +24,17 @@
     <div class="grid"></div>
 
     <header class="navbar">
-        <a href="index.html" class="logo">LOGO</a>
+        <a href="index.php" class="logo">LOGO</a>
 
         <nav class="nav-links">
-            <a href="index.html">Catalogue</a>
-            <a href="PagePopulaire.html">Populaires</a>
-            <a href="PageLeaderboard.html">Leaderboard</a>
+            <a href="index.php">Catalogue</a>
+            <a href="PagePopulaire.php">Populaires</a>
+            <a href="PageLeaderboard.php">Leaderboard</a>
 
         </nav>
 
         <div class="nav-actions">
-            <a href="PageDeConnexion.html" class="btn btn-main">Connexion</a>
+            <a href="PageDeConnexion.php" class="btn btn-main">Connexion</a>
         </div>
 
     </header>
