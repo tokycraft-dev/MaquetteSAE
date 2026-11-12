@@ -40,7 +40,7 @@
     </header>
 
     <div class="wrapper">
-        <form action="">
+        <form action="controleur/inscription.php" method="POST">
             <h1>Inscription</h1>
 
             <div class="input-a">
