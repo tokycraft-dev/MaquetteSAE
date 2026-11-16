@@ -16,7 +16,15 @@
     <nav class="navbar">
         <div class="logo"><a href="index.php">LOGO</a></div>
         <ul class="nav_links">
-            <li><a href="#"><a href="PageDeConnexion.php"><button>Connexion</button></a></li>
+            <?php
+                session_start();
+                if (isset($_SESSION["login"])) {
+                    echo "<li><a href='PageDeProfil.php'><button>Connexion</button></a></li>";
+                }
+                else {
+                    echo "<li><a href='PageDeConnexion.php'><button>Connexion</button></a></li>";
+                }
+            ?>
             <li><a href="index.php"><button>Liste de jeux</button></a></li>
         </ul>
         </nav>
