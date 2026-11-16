@@ -48,12 +48,19 @@
 		<div id="contenu_paramètre">
 			<section id="compte" class="section_paramètre">
 				<h2> Paramètrage du compte </h2>
-				<form>
+				<form method='POST'>
 					<div>
 						<?php
                 			echo "<p> Nom d'utilisateur: ".$_SESSION['login']."</p>";
+							echo "<button type='button' class='modification' name='modif_login'> <img src='public/images/modification.png' width=420 height=420 alt='image du bouton de modification'> </button>";
+							if (isset($_POST["modif_login"])) {
+								echo "<form action="controleur/modif_login.php" method='POST'>";
+								echo "<input type='text' name='identifiant' placeholder='Identifiant' required>";
+								echo "<input type='text' name='confirmation' placeholder='Confirmer Identifiant' required>";
+								echo "<button type='submit' class='btn'>Modifier l'identifiant</button>";
+								echo "</form>";
+							}
 						?>
-						<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
 					</div>
 					<div>
 						<p> E-mail: &ltUtilisateur@gmail.com&gt </p>
