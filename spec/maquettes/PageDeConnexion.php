@@ -24,7 +24,7 @@
     <div class="grid"></div>
 
     <header class="navbar">
-        <a href="index.html" class="logo">LOGO</a>
+        <a href="index.php" class="logo">LOGO</a>
 
         <nav class="nav-links">
             <a href="index.php">Catalogue</a>
