@@ -33,7 +33,15 @@
                     echo "<a href='PageDeConnexion.php' class='btn btn-ghost'>Profil</a>";
                 }
             ?>
-            <a href="PageDeConnexion.php" class="btn btn-main">Connexion</a>
+            <?php
+                session_start();
+                if (isset($_SESSION["login"])) {
+                    echo "<a href='PageDeProfil.php' class='btn btn-main'>Connexion</a>";
+                }
+                else {
+                    echo "<a href='PageDeConnexion.php' class='btn btn-main'>Connexion</a>";
+                }
+            ?>
         </div>
     </header>
 
