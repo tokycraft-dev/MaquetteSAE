@@ -6,7 +6,7 @@ html{
     display : flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 0.15em solid #310075;
+    border-bottom: 0.15em solid #ff2ef5;
 }
 
 #nav_horizontale ul{
@@ -35,7 +35,7 @@ html{
 #nav_verticale ul li label{
     display: flex;
     flex-direction: row;
-    color: white;
+    color: #ff2ef5;
     text-decoration: none;
     font-size: 20px;
 }
@@ -55,7 +55,8 @@ html{
 
 p{
     font-family: 'Orbitron', sans-serif;
-    color: #ff2bd6;
+    font-weight: 700;
+    color: #ff2ef5;
 }
 
 h1 {
@@ -105,12 +106,12 @@ h2 {
 #nav_verticale{
     min-height: 60%;
     justify-content: space-between;
-    border-right: 0.15em solid #310075;
+    border-right: 0.15em solid #ff2ef5;
     width: 25%;
 }
 
 footer {
-    border-top: 0.15em solid #310075;
+    border-top: 0.15em solid #ff2ef5;
 }
 
 input[type="radio"][name="clic-parametres"] {
