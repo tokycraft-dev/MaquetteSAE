@@ -144,6 +144,7 @@ h1 {
     -webkit-background-clip: text;
     background-clip: text;
     filter: drop-shadow(0 0 14px #f222ff);
+    padding: 5px;
 }
 
 h2 {
@@ -156,6 +157,7 @@ h2 {
     -webkit-background-clip: text;
     background-clip: text;
     filter: drop-shadow(0 0 14px #f222ff);
+    padding: 5px;
 }
 
 .image_ronde {
