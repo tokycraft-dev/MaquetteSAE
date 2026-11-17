@@ -5,6 +5,7 @@ body {
     color: #fff;
     background: linear-gradient(#0b0120, #2a0b4e 38%,#b3127a 56%, #ff6a3d 60%, #0b0120 60%);
     background-attachment: fixed;
+    margin: 0;
 }
 
 
@@ -148,7 +149,7 @@ h1 {
 h2 {
     color: transparent;
     font: italic 450 4.5vmin 'Orbitron', sans-serif;
-    text-align: center;
+    text-align: left;
     position: relative;
     background: linear-gradient(#fff 35%, #2de2e6 50%, 
     #f222ff 50%, #ffd319 90%);
