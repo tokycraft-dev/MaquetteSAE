@@ -246,6 +246,14 @@ input[type="radio"][name="clic-parametres"] {
     -webkit-text-stroke: 0.5px #a51aa0;
 }
 
+#contenu_paramètre #bouton_déconnexion {
+    -webkit-text-stroke: 0.25px #707070;
+}
+
+#contenu_paramètre #bouton_supression {
+    -webkit-text-stroke: 0.25px #ff1010;
+}
+
 #clic-compte:checked ~ #contenu_paramètre #compte { 
     display: block; 
 }
@@ -310,7 +318,10 @@ input[type="radio"][name="clic-parametres"] {
 }
 
 #bouton_déconnexion {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
     background: none;
+    padding: 5px;
     border: 3px solid #767676;
     color: #767676;
     border-radius: 8px;
@@ -318,7 +329,10 @@ input[type="radio"][name="clic-parametres"] {
 }
 
 #bouton_supression {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
     background: none;
+    padding: 5px;
     border: 3px solid #ff0000;
     color: #ff0000;
     border-radius: 8px;
