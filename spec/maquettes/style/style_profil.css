@@ -234,7 +234,16 @@ input[type="radio"][name="clic-parametres"] {
     width: auto;
     border: 2px inset #a51aa0;
     border-radius: 8px;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(18px);
+    color: #a51aa0;
+}
+
+#contenu_paramètre * {
+    -webkit-text-stroke: 0.25px #a51aa0;
+}
+
+#contenu_paramètre h2 {
+    -webkit-text-stroke: 0.5px #a51aa0;
 }
 
 #clic-compte:checked ~ #contenu_paramètre #compte { 
