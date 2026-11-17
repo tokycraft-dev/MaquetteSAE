@@ -10,12 +10,16 @@
 	?>
 </head>
 <body>
+    <div class="stars"></div>
+    <div class="sun"></div>
+    <div class="mountains"></div>
+    <div class="grid"></div>
 	<header id="entete">
         	<nav id="nav_horizontale">
             	<ul>
                 	<li>
 						<label for="clic-profil">
-							<img src="public/images/photoProfilAnonyme.png" alt="Photo de profil" width=500 height=500 id="imageProfil">
+							<img class="image_ronde" src="public/images/photoProfilAnonyme.png" alt="Photo de profil" width=500 height=500 id="imageProfil">
 						</label>
 					</li>
 					<?php
@@ -25,7 +29,7 @@
             	<ul id="menu">
                 	<li >
 						<a href="index.php">
-  							<img src="public/images/LogoPlaceHolder.png" alt="Logo vers le menu" width=216 height=222 id="imageLogo">
+  							<img class="image_ronde" src="public/images/LogoPlaceHolder.png" alt="Logo vers le menu" width=216 height=222 id="imageLogo">
 						</a>
 					</li>
             	</ul>
@@ -76,7 +80,7 @@
 				<h2> Paramètrage du profil </h2>
 				<form>
 					<div>
-						<p> Photo de profil: <img src="public/images/photoProfilAnonyme.png" alt="Photo de profil" width=500 height=500 id="imageProfilParamètres"> </p>
+						<p> Photo de profil: <img class="image_ronde" src="public/images/photoProfilAnonyme.png" alt="Photo de profil" width=500 height=500 id="imageProfilParamètres"> </p>
 						<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
 					</div>
 					<div>
