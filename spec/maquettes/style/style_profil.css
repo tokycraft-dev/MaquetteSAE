@@ -54,7 +54,8 @@ html{
 }
 
 p{
-    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    color: #ff2bd6;
 }
 
 h1 {
