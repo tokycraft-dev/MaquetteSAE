@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Title</title>
 	<link rel="stylesheet" href="style/style_profil.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap">
 	<?php
 		session_start();
 	?>
