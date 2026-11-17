@@ -1,5 +1,79 @@
-html{
-    background-color: #17171f;
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    background: linear-gradient(#0b0120, #2a0b4e 38%,#b3127a 56%, #ff6a3d 60%, #0b0120 60%);
+    background-attachment: fixed;
+}
+
+
+.stars {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+}
+
+.sun {
+    width: 46vmin;
+    aspect-ratio: 1;
+    background: linear-gradient(#ffd319,#ff901f 35%, #ff2975 65%, #f222ff);
+    border-radius: 50%;
+    position: fixed;
+    left: 50%;
+    top: 60%;
+    translate: -50% -72%;
+    mask: linear-gradient(#000 52%, transparent 52% 57%,
+    #000 57% 64%, transparent 64% 70%, #000 70% 77%,
+    transparent 77% 85%, #000 85%);
+}
+
+.mountains {
+    height: 9vmin;
+    background: linear-gradient(#4a1a7a, #12052b);
+    clip-path: polygon(0 100%, 0 65%, 9% 30%, 17% 58%, 27%
+    12%, 37% 55%, 46% 28%, 54% 62%, 63% 18%, 73% 52%, 82% 22%,
+    91% 58%, 100% 32%, 100% 100%);
+    width: 100%;
+    position: fixed;
+    bottom: 40%;
+}
+
+.grid {
+    height: 40%;
+    background: linear-gradient(transparent 94%, #ff2ef5 94%) 0 0 /
+    100% 36px,
+    linear-gradient(90deg, transparent 96%, #ff2ef5
+            96%) 0 0 / 48px 100%,
+    #0b0120;
+    width: 200%;
+    position: fixed;
+    top: 60%;
+    left: -50%;
+    transform-origin: top;
+    transform: perspective(160px) rotateX(60deg);
+    animation: drive 1.2s linear infinite;
+}
+
+@keyframes drive {
+    to { background-position: 0 36px, 0 0, 0 0;}
+}
+
+.stars i {
+    background: #fff;
+    padding: 0.8px;
+    position: absolute;
+    border-radius: 50%;
+    animation: twinkle 1.5s infinite alternate;
+}
+
+@keyframes twinkle {
+    to { opacity: 0.15;}
+}
+
+.stars, .sun, .mountains, .grid {
+    z-index: -1;
+    pointer-events: none;
 }
 
 #nav_horizontale{
@@ -35,7 +109,7 @@ html{
 #nav_verticale ul li label{
     display: flex;
     flex-direction: row;
-    color: #ff2ef5;
+    color: #00e5ff;
     text-decoration: none;
     font-size: 20px;
 }
@@ -83,19 +157,23 @@ h2 {
     filter: drop-shadow(0 0 14px #f222ff);
 }
 
+.image_ronde {
+    border-radius: 50%;
+}
+
 #imageProfil{
     width: 10em;
-    height: auto;
+    height: 10em;
 }
 
 #imageProfilParamètres{
     width: 18em;
-    height: auto;
+    height: 18em;
 }
 
 #imageLogo{
     width: 5em;
-    height: auto;
+    height: 5em;
 }
 
 #paramètres{
@@ -149,6 +227,16 @@ input[type="radio"][name="clic-parametres"] {
     font-size: 45px;
 }
 
+#contenu_paramètre {
+    margin: 2.5em;
+    display: flex;
+    flex-grow: 1;
+    width: auto;
+    border: 2px inset #a51aa0;
+    border-radius: 8px;
+    backdrop-filter: blur(12px);
+}
+
 #clic-compte:checked ~ #contenu_paramètre #compte { 
     display: block; 
 }
@@ -169,7 +257,7 @@ input[type="radio"][name="clic-parametres"] {
 #clic-profil:checked ~ #nav_verticale label[for="clic-profil"],
 #clic-preferences:checked ~ #nav_verticale label[for="clic-preferences"],
 #clic-déconnexion:checked ~ #nav_verticale label[for="clic-déconnexion"] {
-    color: #00e5ff;
+    color: #ff2ef5;
     font-weight: bold;
 }
 
@@ -184,7 +272,7 @@ input[type="radio"][name="clic-parametres"] {
 .lien_navigation:not([id="dernier"]):not([id="premier"]) {
     padding-top: 3em;
     padding-bottom: 3em;
-    border-bottom: 0.05em solid #240b4a;
+    border-bottom: 0.05em solid #a51aa0;
     flex:1;
 }
 
