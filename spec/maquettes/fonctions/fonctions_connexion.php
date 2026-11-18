@@ -65,7 +65,7 @@
 
     function inscription ($login, $mdp, $connexion, $base, $table) {
         $mdp = md5($mdp);
-        $sql = "INSERT INTO $table (login, mot_de_passe, role) VALUES ('$login', '$mdp', 'joueur')";
+        $sql = "INSERT INTO $table (login, pseudo, mot_de_passe, role) VALUES ('$login', '$login', '$mdp', 'joueur')";
         $db = mysqli_select_db($connexion, $base);
 
         if ($db) {
