@@ -160,13 +160,43 @@ h2 {
     padding: 5px;
 }
 
+label {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
 .image_ronde {
     border-radius: 50%;
 }
 
+#span_image {
+    position: relative;
+    display: inline-block;
+}
+
 #imageProfil{
+    cursor: pointer;
     width: 10em;
     height: 10em;
+}
+
+#imageProfilHover {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 8em;
+    height: 8em;
+    z-index: 2;
+    opacity: 0.8;
+    display: none;
+    pointer-events: none;
+}
+
+#span_image:hover #imageProfilHover {
+    display: block;
 }
 
 #imageProfilParamètres{
