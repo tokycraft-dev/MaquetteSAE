@@ -19,8 +19,11 @@
             	<ul>
                 	<li>
 						<label for="clic-profil">
-							<img class="image_ronde" src="public/images/photoProfilAnonyme.png" alt="Photo de profil" width=500 height=500 id="imageProfil">
-						</label>
+                            <span id="span_image">
+                                <img src="public/images/modification_hover.png" alt="modification" width=500 height=500 id="imageProfilHover">
+							    <img class="image_ronde" src="public/images/photoProfilAnonyme.png" alt="Photo de profil" width=500 height=500 id="imageProfil">
+                            </span>
+                        </label>
 					</li>
 					<?php
                 		echo "<li><h1>Bonjour ".$_SESSION['login']."</h1></li>";
