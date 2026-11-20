@@ -63,11 +63,24 @@
         return false;
     }
 
+    function verif_motdepasse_solide ($mdp) {
+        if ((mb_strlen(trim($mdp), 'UTF-8')) < 8) {
+            return false;
+        }
+        if (! preg_match('/[\.,;:!\?\/\\\|_\-\'"\(\)\[\]\{\}<>\+=\*%^~@#\$&€£]/u', $mdp)) {
+            return false;
+        }
+        if (! preg_match('/[0-9]/u', $mdp)) {
+            return false;
+        }
+        return true;
+    }
+
     function inscription ($login, $mdp, $connexion, $base, $table) {
         $mdp = md5($mdp);
         $sql = "INSERT INTO $table (login, pseudo, mot_de_passe, role) VALUES ('$login', '$login', '$mdp', 'joueur')";
         $db = mysqli_select_db($connexion, $base);
-
+    
         if ($db) {
             $result = mysqli_query($connexion, $sql);
             if ($result) {
