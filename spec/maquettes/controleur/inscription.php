@@ -9,7 +9,7 @@
         $base = "sae_db";
         $table = "utilisateur";
         if (! in($login, $connexion, $base, $table)){
-            if (mdp == $mdp_c) {
+            if ($mdp == $mdp_c) {
                 if (verif_motdepasse_solide($mdp)) {
                     $result = inscription($login, $mdp, $connexion, $base, $table);
                     if ($result == 0) {
