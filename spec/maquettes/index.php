@@ -55,7 +55,14 @@
             <div class="cover"></div>
             <div class="info">
                 <h2>JEU 1</h2>
-                <a href="PageDeJeu1.php" class="btn btn-ghost">Jouer</a>
+                <?php
+                    if (isset($_SESSION["login"])) {
+                        echo "<a href='PageDeJeu1.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                    else {
+                        echo "<a href='PageDeConnexion.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                ?>
             </div>
         </article>
 
@@ -63,7 +70,14 @@
             <div class="cover"></div>
             <div class="info">
                 <h2>JEU 2</h2>
-                <a href="PageDeJeu2.php" class="btn btn-ghost">Jouer</a>
+                <?php
+                    if (isset($_SESSION["login"])) {
+                        echo "<a href='PageDeJeu2.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                    else {
+                        echo "<a href='PageDeConnexion.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                ?>
             </div>
         </article>
 
@@ -71,7 +85,14 @@
             <div class="cover"></div>
             <div class="info">
                 <h2>JEU 3</h2>
-                <a href="PageDeJeu1.php" class="btn btn-ghost">Jouer</a>
+                <?php
+                    if (isset($_SESSION["login"])) {
+                        echo "<a href='PageDeJeu1.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                    else {
+                        echo "<a href='PageDeConnexion.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                ?>
             </div>
         </article>
 
@@ -79,7 +100,14 @@
             <div class="cover"></div>
             <div class="info">
                 <h2>JEU 4</h2>
-                <a href="PageDeJeu1.php" class="btn btn-ghost">Jouer</a>
+                <?php
+                    if (isset($_SESSION["login"])) {
+                        echo "<a href='PageDeJeu1.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                    else {
+                        echo "<a href='PageDeConnexion.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                ?>
             </div>
         </article>
 
@@ -87,7 +115,14 @@
             <div class="cover"></div>
             <div class="info">
                 <h2>JEU 5</h2>
-                <a href="PageDeJeu1.php" class="btn btn-ghost">Jouer</a>
+                <?php
+                    if (isset($_SESSION["login"])) {
+                        echo "<a href='PageDeJeu1.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                    else {
+                        echo "<a href='PageDeConnexion.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                ?>
             </div>
         </article>
 
@@ -95,7 +130,14 @@
             <div class="cover"></div>
             <div class="info">
                 <h2>JEU 6</h2>
-                <a href="PageDeJeu1.php" class="btn btn-ghost">Jouer</a>
+                <?php
+                    if (isset($_SESSION["login"])) {
+                        echo "<a href='PageDeJeu1.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                    else {
+                        echo "<a href='PageDeConnexion.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                ?>
             </div>
         </article>
 
@@ -103,7 +145,14 @@
             <div class="cover"></div>
             <div class="info">
                 <h2>JEU 7</h2>
-                <a href="PageDeJeu1.php" class="btn btn-ghost">Jouer</a>
+                <?php
+                    if (isset($_SESSION["login"])) {
+                        echo "<a href='PageDeJeu1.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                    else {
+                        echo "<a href='PageDeConnexion.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                ?>
             </div>
         </article>
 
@@ -111,7 +160,14 @@
             <div class="cover"></div>
             <div class="info">
                 <h2>JEU 8</h2>
-                <a href="PageDeJeu1.php" class="btn btn-ghost">Jouer</a>
+                <?php
+                    if (isset($_SESSION["login"])) {
+                        echo "<a href='PageDeJeu1.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                    else {
+                        echo "<a href='PageDeConnexion.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                ?>
             </div>
         </article>
     </section>
