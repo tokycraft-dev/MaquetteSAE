@@ -62,6 +62,13 @@
         if (! preg_match('/[0-9]/u', $mdp)) {
             return false;
         }
+        if (! preg_match('/[A-Z]/u', $mdp)) {
+            return false;
+        }
+        if (! preg_match('/[a-z]/u', $mdp)) {
+            return false;
+        }
+    
         return true;
     }
 
