@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Page de connexion</title>
+    <title>Page d'inscription</title>
 
     <!--Importation de boxicons pour les icons-->
     <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
@@ -14,8 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style/style_formulaire.css">
-
-
+    <?php
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+    ?>
 </head>
 <body>
     <div class="stars"></div>
@@ -50,6 +53,11 @@
 
             <div class="input-a">
                 <input type="password" name="motdepasse" aria-label="Mot de passe" placeholder="Mot de passe" required>
+                <i class="bxf bx-lock"></i> <!-- icon cadenas -->
+            </div>
+
+            <div class="input-a">
+                <input type="password" name="motdepasse_confirmation" aria-label="Confirmer le mot de passe" placeholder="Conirmer le mot de passe" required>
                 <i class="bxf bx-lock"></i> <!-- icon cadenas -->
             </div>
 
