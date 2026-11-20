@@ -23,7 +23,14 @@
 						<label for="clic-profil">
                             <span id="span_image">
                                 <img src="public/images/modification_hover.png" alt="modification" width=500 height=500 id="imageProfilHover">
-							    <img class="image_ronde" src="public/images/photoProfilAnonyme.png" alt="Photo de profil" width=500 height=500 id="imageProfil">
+							    <?php
+									if ($_POST['photo'] == true) {
+										echo "<img class='image_ronde' src='public/images/photoProfil_".$_SESSION['id'].".png' alt='Photo de profil' width=500 height=500 id='imageProfil'>";
+									}
+									else {
+										echo "<img class='image_ronde' src='public/images/photoProfilAnonyme.png' alt='Photo de profil' width=500 height=500 id='imageProfil'>";
+									}
+								?>
                             </span>
                         </label>
 					</li>
