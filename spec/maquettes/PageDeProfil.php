@@ -65,73 +65,81 @@
 		<div id="contenu_paramètre">
 			<section id="compte" class="section_paramètre">
 				<h2> Paramètrage du compte </h2>
-				<form action='controleur/modif_compte.php' method='POST'>
 					<div>
-						<?php
-                			echo "<p> Nom d'utilisateur: ".$_SESSION['login']."</p>";
-							echo "<button type='submit' class='modification' name='modif_login'> <img src='public/images/modification.png' width=420 height=420 alt='image du bouton de modification'> </button>";
-							if (isset($_POST["modif_login"])) {
-								echo "<input type='text' name='identifiant' placeholder='Identifiant' required>";
-								echo "<input type='text' name='confirmation' placeholder='Confirmer Identifiant' required>";
-								echo "<button type='submit' class='btn'>Modifier l'identifiant</button>";
-							}
-						?>
+						<form action='' method='POST'>
+							<?php
+	                			echo "<p> Nom d'utilisateur: ".$_SESSION['login']."</p>";
+								echo "<button type='submit' class='modification' name='modif_login'> <img src='public/images/modification.png' width=420 height=420 alt='image du bouton de modification'> </button>";
+								if (isset($_POST["modif_login"])) {
+									echo "<form action='controleur/modif_compte.php' method='POST'";
+									echo "<input type='text' name='identifiant' placeholder='Identifiant' required>";
+									echo "<input type='text' name='confirmation' placeholder='Confirmer Identifiant' required>";
+									echo "<button type='submit' class='btn'>Modifier l'identifiant</button>";
+									echo "</form>";
+								}
+							?>
+						</form>
 					</div>
 					<div>
-						<p> E-mail: &ltUtilisateur@gmail.com&gt </p>
-						<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
+						<form action='' method='POST'>
+							<p> E-mail: &ltUtilisateur@gmail.com&gt </p>
+							<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
+						</form>
 					</div>
 					<div>
-						<p> Mot de passe: &lt**********&gt </p>
-						<button type="button" class="visibilité"> <img src="public/images/visibilité.png" width=315 height="315"  alt="image du bouton de visibilité du mot de passe"> </button>
-						<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
+						<form action='' method='POST'>
+							<p> Mot de passe: &lt**********&gt </p>
+							<button type="button" class="visibilité"> <img src="public/images/visibilité.png" width=315 height="315"  alt="image du bouton de visibilité du mot de passe"> </button>
+							<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
+						</form>
 					</div>
-				</form>
 			</section> 
 			<section id="profil" class="section_paramètre">
 				<h2> Paramètrage du profil </h2>
-				<form>
 					<div>
-						<p> Photo de profil: <img class="image_ronde" src="public/images/photoProfilAnonyme.png" alt="Photo de profil" width=500 height=500 id="imageProfilParamètres"> </p>
-						<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
+						<form>
+							<p> Photo de profil: <img class="image_ronde" src="public/images/photoProfilAnonyme.png" alt="Photo de profil" width=500 height=500 id="imageProfilParamètres"> </p>
+							<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
+						</form>
 					</div>
 					<div>
-						<p> Description: </p>
-						<div>
+						<form>
+							<p> Description: </p>
 							<p> description utilisateur </p>
-						</div>
-						<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
+							<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
+						</form>
 					</div>
 					<div>
-						<p> Pseudo: &ltUser&gt </p>
-						<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
+						<form>
+							<p> Pseudo: &ltUser&gt </p>
+							<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
+						</form>
 					</div>
-				</form>
 			</section> 
 			<section id="preferences" class="section_paramètre">
 				<h2> Paramètrage des préférences </h2>
-				<form>
 					<div>
-						<p> Thème: <img src="public/images/thèmePlaceHolder.png" alt="thème de couleur du site"> </p>
-						<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
+						<form>
+							<p> Thème: <img src="public/images/thèmePlaceHolder.png" alt="thème de couleur du site"> </p>
+							<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
+						</form>
 					</div>
 					<div>
-						<p> Visibilité dans le leaderboard: oui </p>
-						<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
+						<form>
+							<p> Visibilité dans le leaderboard: oui </p>
+							<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
+						</form>
 					</div>
-				</form>
 			</section> 
 			<section id="déconnexion" class="section_paramètre">
 				<h2> Déconnexion </h2>
-				<form>
 					<div>
-					<a href="controleur/logout.php" class="deconnexion" onclick=
-					"return confirm ('Etes-vous sûr de vouloir vous déconnecter ?');"><button type="button" id="bouton_déconnexion"> Se déconnecter </button></a>
-					</div>					
-					<div>
-						<button type="button" id="bouton_supression"> Supprimer le compte </button>
+						<form>
+							<a href="controleur/logout.php" class="deconnexion" onclick=
+							"return confirm ('Etes-vous sûr de vouloir vous déconnecter ?');"><button type="button" id="bouton_déconnexion"> Se déconnecter </button></a>
+							<button type="button" id="bouton_supression"> Supprimer le compte </button>
+						</form>
 					</div>
-				</form>
 			</section> 
 		</div>
 	</div>
