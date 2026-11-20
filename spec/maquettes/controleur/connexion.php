@@ -1,4 +1,7 @@
 <?php
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
     include("../fonctions/fonctions_connexion.php");
 
     if(isset($_POST["identifiant"], $_POST["motdepasse"])){
