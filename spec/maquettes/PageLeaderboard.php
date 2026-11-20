@@ -6,6 +6,11 @@
     <title>Leaderboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style_index.css">
+    <?php
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+    ?>
 </head>
 <body>
     <div class="stars"></div>
@@ -25,7 +30,6 @@
 
         <div class="nav-actions">
             <?php
-                session_start();
                 if (isset($_SESSION["login"])) {
                     echo "<a href='PageDeProfil.php' class='btn btn-ghost'>Profil</a>";
                 }
@@ -34,7 +38,6 @@
                 }
             ?>
             <?php
-                session_start();
                 if (isset($_SESSION["login"])) {
                     echo "<a href='PageDeProfil.php' class='btn btn-main'>Connexion</a>";
                 }
