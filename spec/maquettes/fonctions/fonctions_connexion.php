@@ -7,17 +7,6 @@
         else {
             $connexion = @mysqli_connect($host, $user, $pass);
         }
-        if ($connexion) {
-            echo "<p>Connexion réussie</p>";
-            echo "<p>Information sur le serveur : <b>".mysqli_get_host_info($connexion)."</b></p>";
-            echo "<p>Version serveur : <b>".mysqli_get_server_info($connexion)."</b></p>";
-            echo "<p>Jeu de caractères : <b>".mysqli_character_set_name($connexion)."</b></p>";
-        }
-        else {
-            echo "<p>Erreur: ouverture de la connexion echoué</p>";
-            echo "<p>Numéro de l'erreur:".mysqli_connect_errno()." </p>";
-            echo "<p>Message de l'erreur:".mysqli_connect_error()." </p>";
-        }
         return $connexion;
     }
 
