@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Title</title>
+	<title>Page de Profil</title>
 	<link rel="stylesheet" href="style/style_profil.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap">
-	<?php
-		session_start();
-	?>
+    <?php
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+    ?>
 </head>
 <body>
     <div class="stars"></div>
