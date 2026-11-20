@@ -99,20 +99,20 @@
 			<section id="profil" class="section_paramètre">
 				<h2> Paramètrage du profil </h2>
 					<div>
-						<form>
+						<form action='' method='POST'>
 							<p> Photo de profil: <img class="image_ronde" src="public/images/photoProfilAnonyme.png" alt="Photo de profil" width=500 height=500 id="imageProfilParamètres"> </p>
 							<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
 						</form>
 					</div>
 					<div>
-						<form>
+						<form action='' method='POST'>
 							<p> Description: </p>
 							<p> description utilisateur </p>
 							<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
 						</form>
 					</div>
 					<div>
-						<form>
+						<form action='' method='POST'>
 							<p> Pseudo: &ltUser&gt </p>
 							<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
 						</form>
@@ -121,13 +121,13 @@
 			<section id="preferences" class="section_paramètre">
 				<h2> Paramètrage des préférences </h2>
 					<div>
-						<form>
+						<form action='' method='POST'>
 							<p> Thème: <img src="public/images/thèmePlaceHolder.png" alt="thème de couleur du site"> </p>
 							<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
 						</form>
 					</div>
 					<div>
-						<form>
+						<form action='' method='POST'>
 							<p> Visibilité dans le leaderboard: oui </p>
 							<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
 						</form>
@@ -136,7 +136,7 @@
 			<section id="déconnexion" class="section_paramètre">
 				<h2> Déconnexion </h2>
 					<div>
-						<form>
+						<form action='' method='POST'>
 							<a href="controleur/logout.php" class="deconnexion" onclick=
 							"return confirm ('Etes-vous sûr de vouloir vous déconnecter ?');"><button type="button" id="bouton_déconnexion"> Se déconnecter </button></a>
 							<button type="button" id="bouton_supression"> Supprimer le compte </button>
