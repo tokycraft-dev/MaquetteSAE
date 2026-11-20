@@ -55,15 +55,28 @@
             <div class="cover"></div>
             <div class="info">
                 <h2>JEU POPULAIRE 1</h2>
-                <a href="PageDeJeu1.php" class="btn btn-ghost">Jouer</a>
+                <?php
+                    if (isset($_SESSION["login"])) {
+                        echo "<a href='PageDeJeu1.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                    else {
+                        echo "<a href='PageDeConnexion.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                ?>
             </div>
         </article>
 
         <article class="card">
             <div class="cover"></div>
             <div class="info">
-                <h2>JEU POPULAIRE 2</h2>
-                <a href="PageDeJeu2.php" class="btn btn-ghost">Jouer</a>
+                <h2>JEU POPULAIRE 2</h2><?php
+                    if (isset($_SESSION["login"])) {
+                        echo "<a href='PageDeJeu2.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                    else {
+                        echo "<a href='PageDeConnexion.php' class='btn btn-ghost'>Jouer</a>";
+                    }
+                ?>
             </div>
         </article>
 
