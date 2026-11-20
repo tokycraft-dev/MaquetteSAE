@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style_jeu.css">
     <title>Page de jeu</title>
-
-
+    <?php
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+    ?>
 </head>
 <body>
     <div class="stars"></div>
@@ -17,7 +20,6 @@
         <div class="logo"><a href="index.php">LOGO</a></div>
         <ul class="nav_links">
             <?php
-                session_start();
                 if (isset($_SESSION["login"])) {
                     echo "<li><a href='PageDeProfil.php'><button>Connexion</button></a></li>";
                 }
