@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style_jeu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+
     <title>Page de jeu</title>
     <?php
         if (session_status() == PHP_SESSION_NONE) {
@@ -16,22 +18,42 @@
     <div class="sun"></div>
     <div class="mountains"></div>
     <div class="grid"></div>
-    <nav class="navbar">
-        <div class="logo"><a href="index.php">LOGO</a></div>
-        <ul class="nav_links">
-            <?php
-                if (isset($_SESSION["login"])) {
-                    echo "<li><a href='PageDeProfil.php'><button>Connexion</button></a></li>";
-                }
-                else {
-                    echo "<li><a href='PageDeConnexion.php'><button>Connexion</button></a></li>";
-                }
-            ?>
-            <li><a href="index.php"><button>Liste de jeux</button></a></li>
-        </ul>
+    <header class="navbar">
+        <a href="index.php" class="logo">LOGO</a>
+
+        <nav class="nav-links">
+            <a href="index.php" class="active">Catalogue</a>
+            <a href="PagePopulaire.php">Populaires</a>
+            <a href="PageLeaderboard.php">Leaderboard</a>
+            
         </nav>
 
+        <div class="nav-actions">
+            <?php
+                if (isset($_SESSION["login"])) {
+                    echo "<a href='PageDeProfil.php' class='btn btn-ghost'>Profil</a>";
+                }
+                else {
+                    echo "<a href='PageDeConnexion.php' class='btn btn-ghost'>Profil</a>";
+                }
+            ?>
+            <?php
+                if (isset($_SESSION["login"])) {
+                    echo "<a href='PageDeProfil.php' class='btn btn-main'>Connexion</a>";
+                }
+                else {
+                    echo "<a href='PageDeConnexion.php' class='btn btn-main'>Connexion</a>";
+                }
+            ?>
+        </div>
 
-        <div class="ecran_jeu">Ecran du jeu</div>
+    </header>
+         <script src="script/script.js"></script>
+         <div class="ecran_jeu">
+            <p>Jeu</p>
+         </div>
+         <div class="titre_jeu">
+            <p>Nom du jeu</p>
+         </div>
     </body>
 </html>
