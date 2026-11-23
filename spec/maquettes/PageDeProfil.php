@@ -70,7 +70,7 @@
 							<?php
 	                			echo "<p> Nom d'utilisateur: ".$_SESSION['login']."</p>";
 							?>
-							<input type='radio' id='clic-modif-login' name='clic-modif-login' class='checkbox-modif'>
+							<input type='checkbox' id='clic-modif-login' class='checkbox-modif'>
 							<label class='modification' for='clic-modif-login'> <img src='public/images/modification.png' width=420 height=420 alt='image du bouton de modification'> </button>
 						</form>
 						<form action='controleur/modif_compte.php' method='POST' id='formulaire-login'>;
