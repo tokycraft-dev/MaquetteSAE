@@ -1,3 +1,8 @@
+<?php
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -5,11 +10,8 @@
 	<title>Page de Profil</title>
 	<link rel="stylesheet" href="style/style_profil.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap">
-    <?php
-        if (session_status() == PHP_SESSION_NONE) {
-            session_start();
-        }
-    ?>
+	<script src="script/script.js"></script>
+	<script src="script/script_profil.js"></script>
 </head>
 <body>
     <div class="stars"></div>
