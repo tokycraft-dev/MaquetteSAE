@@ -225,12 +225,21 @@ footer {
     border-top: 0.15em solid #ff2ef5;
 }
 
-input[type="radio"][name="clic-parametres"] {
-    display: none;
+input[type="radio"][name="clic-parametres"],
+.checkbox-modif {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
 }
 
-.checkbox-modif {
-    display: none;
+#clic-compte:focus-visible ~ #nav_verticale label[for="clic-compte"],
+#clic-profil:focus-visible ~ #nav_verticale label[for="clic-profil"],
+#clic-preferences:focus-visible ~ #nav_verticale label[for="clic-preferences"],
+#clic-déconnexion:focus-visible ~ #nav_verticale label[for="clic-déconnexion"],
+.checkbox-modif:focus-visible + .modification {
+    outline: 3px solid #00e5ff;
+    outline-offset: 4px;
 }
 
 #formulaire-login {
@@ -281,7 +290,7 @@ input[type="radio"][name="clic-parametres"] {
     border: 2px inset #a51aa0;
     border-radius: 8px;
     backdrop-filter: blur(18px);
-    color: #a51aa0;
+    color: #600F5D3F;
 }
 
 #contenu_paramètre * {
@@ -298,6 +307,35 @@ input[type="radio"][name="clic-parametres"] {
 
 #contenu_paramètre #bouton_supression {
     -webkit-text-stroke: 0.25px #ff1010;
+}
+
+.formulaire-modification {
+    border: 2px outset #a51aa0;
+    margin: 0.25em 1.5em;
+    border-radius: 6px;
+    backdrop-filter: blur(14px);
+    color: #a51aa0;
+    align-content: center;
+}
+
+.formulaire-modification input {
+    border: 1px solid #00e5ff;
+    backdrop-filter: blur(10px);
+    color: #ff2ef5;
+    box-shadow: 0 0 10px #00e5ff80;
+    background: #6E197866;
+}
+
+.formulaire-modification .btn {
+    border: 1px solid #00e5ff;
+    color: #00e5ff;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px #00e5ff80;
+    background: #6E197866;
+}
+
+.formulaire-modification input::placeholder {
+    color: #00e5ff8c;
 }
 
 #clic-compte:checked ~ #contenu_paramètre #compte { 
