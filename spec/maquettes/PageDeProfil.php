@@ -66,11 +66,13 @@
 			<section id="compte" class="section_paramètre">
 				<h2> Paramètrage du compte </h2>
 					<div>
-						<?php
-	                		echo "<p> Nom d'utilisateur: ".$_SESSION['login']."</p>";
-						?>
-						<input type='checkbox' id='clic-modif-login' class='checkbox-modif'>
-						<label class='modification' for='clic-modif-login'> <img src='public/images/modification.png' width=420 height=420 alt='image du bouton de modification'> </label>
+						<div id='ligne-login'>
+							<?php
+		                		echo "<p> Nom d'utilisateur: ".$_SESSION['login']."</p>";
+							?>
+							<input type='checkbox' id='clic-modif-login' class='checkbox-modif'>
+							<label class='modification' for='clic-modif-login'> <img src='public/images/modification.png' width=420 height=420 alt='image du bouton de modification'> </label>
+						</div>
 						<form action='controleur/modif_compte.php' method='POST' id='formulaire-login'>
 							<input type='text' name='identifiant' placeholder='Identifiant' required>
 							<input type='text' name='confirmation' placeholder='Confirmer Identifiant' required>
