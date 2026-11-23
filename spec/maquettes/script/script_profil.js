@@ -5,7 +5,11 @@ const boutonLogin = document.querySelector(
 const imageLogin = boutonLogin.querySelector("img");
 
 boutonLogin.addEventListener("click", function() {
-
-    imageLogin.src = "public/images/stop_modification.png";
-
+    if (imageLogin.src !== "public/images/stop_modification.png") {
+        imageLogin.src = "public/images/stop_modification.png";
+    }
+    
+    else {
+        imageLogin.src = "public/images/modification.png";
+    }
 });
