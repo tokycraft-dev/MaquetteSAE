@@ -74,8 +74,9 @@
 						<label class='modification' for='clic-modif-login'> <img src='public/images/modification.png' width=420 height=420 alt='image du bouton de modification'> </label>
 					</div>
 					<form action='controleur/modif_compte.php' method='POST' id='formulaire-login'>
-						<input type='text' name='identifiant' placeholder='Identifiant' required>
-						<input type='text' name='confirmation' placeholder='Confirmer Identifiant' required>
+						<input type='text' name='identifiant' aria-label="Identifiant" placeholder='Identifiant' required>
+						<input type='text' name='confirmation' aria-label="Confirmation Identifiant" placeholder='Confirmer Identifiant' required>
+						<input type='password' name='motdepasse' aria-label="Mot de passe" placeholder='Mot de passe' required>
 						<button type='submit' class='btn'>Modifier l'identifiant</button>
 					</form>
 				</div>
