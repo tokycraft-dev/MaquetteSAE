@@ -10,8 +10,8 @@
 	<title>Page de Profil</title>
 	<link rel="stylesheet" href="style/style_profil.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap">
-	<script src="script/script.js"></script>
-	<script src="script/script_profil.js"></script>
+	<script src="script/script.js" defer></script>
+	<script src="script/script_profil.js" defer></script>
 </head>
 <body>
     <div class="stars"></div>
