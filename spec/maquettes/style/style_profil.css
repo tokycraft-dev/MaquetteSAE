@@ -243,28 +243,29 @@ input[type="radio"][name="clic-parametres"] {
 
 .section_paramètre {
     display: none;
-    margin-left: 2em;;
+    margin-left: 2em;
 }
 
-.section_paramètre form div {
+.section_paramètre div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.75em;
+}
+
+.section_paramètre div .ligne {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 0.75em;;
+    margin-bottom: 0.75em;
 }
 
-.section_paramètre form div p {
-    display: flex;
-    flex-direction: row;
+.section_paramètre div p {
     align-items: center;
     margin-right: 2em;
 }
 
-.section_paramètre form div p img{
+.section_paramètre div label {
     margin-left: 0.75em;
-}
-
-.section_paramètre form div button {
     margin-right: 1em;
 }
 
