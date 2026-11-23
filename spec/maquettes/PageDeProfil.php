@@ -70,17 +70,14 @@
 							<?php
 	                			echo "<p> Nom d'utilisateur: ".$_SESSION['login']."</p>";
 							?>
-							<button type='submit' class='modification' name='modif_login'> <img src='public/images/modification.png' width=420 height=420 alt='image du bouton de modification'> </button>
+							<input type='radio' id='clic-modif-login' name='clic-modif-login'>
+							<label class='modification' for='clic-modif-login'> <img src='public/images/modification.png' width=420 height=420 alt='image du bouton de modification'> </button>
 						</form>
-							<?php
-								if (isset($_POST["modif_login"])) {
-									echo "<form action='controleur/modif_compte.php' method='POST'>";
-									echo "<input type='text' name='identifiant' placeholder='Identifiant' required>";
-									echo "<input type='text' name='confirmation' placeholder='Confirmer Identifiant' required>";
-									echo "<button type='submit' class='btn'>Modifier l'identifiant</button>";
-									echo "</form>";
-								}
-							?>
+						<form action='controleur/modif_compte.php' method='POST' id='formulaire-login'>;
+							<input type='text' name='identifiant' placeholder='Identifiant' required>;
+							<input type='text' name='confirmation' placeholder='Confirmer Identifiant' required>;
+							<button type='submit' class='btn'>Modifier l'identifiant</button>;
+						</form>;
 					</div>
 					<div>
 						<form action='' method='POST'>
