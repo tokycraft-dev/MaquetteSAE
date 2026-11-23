@@ -65,33 +65,33 @@
 		<div id="contenu_paramètre">
 			<section id="compte" class="section_paramètre">
 				<h2> Paramètrage du compte </h2>
-					<div>
-						<div id='ligne-login'>
-							<?php
-		                		echo "<p> Nom d'utilisateur: ".$_SESSION['login']."</p>";
-							?>
-							<input type='checkbox' id='clic-modif-login' class='checkbox-modif'>
-							<label class='modification' for='clic-modif-login'> <img src='public/images/modification.png' width=420 height=420 alt='image du bouton de modification'> </label>
-						</div>
-						<form action='controleur/modif_compte.php' method='POST' id='formulaire-login'>
-							<input type='text' name='identifiant' placeholder='Identifiant' required>
-							<input type='text' name='confirmation' placeholder='Confirmer Identifiant' required>
-							<button type='submit' class='btn'>Modifier l'identifiant</button>
-						</form>
+				<div>
+					<div id='ligne-login' class='ligne'>
+						<?php
+		                	echo "<p> Nom d'utilisateur: ".$_SESSION['login']."</p>";
+						?>
+						<input type='checkbox' id='clic-modif-login' class='checkbox-modif'>
+						<label class='modification' for='clic-modif-login'> <img src='public/images/modification.png' width=420 height=420 alt='image du bouton de modification'> </label>
 					</div>
-					<div>
-						<form action='' method='POST'>
-							<p> E-mail: &ltUtilisateur@gmail.com&gt </p>
-							<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
-						</form>
-					</div>
-					<div>
-						<form action='' method='POST'>
-							<p> Mot de passe: &lt**********&gt </p>
-							<button type="button" class="visibilité"> <img src="public/images/visibilité.png" width=315 height="315"  alt="image du bouton de visibilité du mot de passe"> </button>
-							<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
-						</form>
-					</div>
+					<form action='controleur/modif_compte.php' method='POST' id='formulaire-login'>
+						<input type='text' name='identifiant' placeholder='Identifiant' required>
+						<input type='text' name='confirmation' placeholder='Confirmer Identifiant' required>
+						<button type='submit' class='btn'>Modifier l'identifiant</button>
+					</form>
+				</div>
+				<div>
+					<form action='' method='POST'>
+						<p> E-mail: &ltUtilisateur@gmail.com&gt </p>
+						<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
+					</form>
+				</div>
+				<div>
+					<form action='' method='POST'>
+						<p> Mot de passe: &lt**********&gt </p>
+						<button type="button" class="visibilité"> <img src="public/images/visibilité.png" width=315 height="315"  alt="image du bouton de visibilité du mot de passe"> </button>
+						<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
+					</form>
+				</div>
 			</section> 
 			<section id="profil" class="section_paramètre">
 				<h2> Paramètrage du profil </h2>
