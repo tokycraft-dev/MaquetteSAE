@@ -5,7 +5,7 @@ const boutonLogin = document.querySelector(
 const imageLogin = boutonLogin.querySelector("img");
 
 boutonLogin.addEventListener("click", function() {
-    if (imageLogin.src !== "public/images/stop_modification.png") {
+    if (!imageLogin.src.endsWith("stop_modification.png")) {
         imageLogin.src = "public/images/stop_modification.png";
     }
     
