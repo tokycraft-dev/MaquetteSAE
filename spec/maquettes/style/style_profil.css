@@ -255,7 +255,6 @@ input[type="radio"][name="clic-parametres"] {
 .section_paramètre div .ligne {
     display: flex;
     flex-direction: row;
-    align-items: center;
     margin-bottom: 0.75em;
 }
 
