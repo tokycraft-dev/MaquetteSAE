@@ -237,7 +237,7 @@ input[type="radio"][name="clic-parametres"] {
     display: none;
 }
 
-#clic-modif-login:checked ~ #formulaire-login {
+#ligne-login:has(#clic-modif-login:checked) ~ #formulaire-login {
     display: block;
 }
 
