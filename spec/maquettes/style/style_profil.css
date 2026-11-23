@@ -229,6 +229,18 @@ input[type="radio"][name="clic-parametres"] {
     display: none;
 }
 
+.checkbox-modif {
+    display: none;
+}
+
+#formulaire-login {
+    display: none;
+}
+
+#clic-modif-login:checked ~ #formulaire-login {
+    display: block;
+}
+
 .section_paramètre {
     display: none;
     margin-left: 2em;;
