@@ -238,7 +238,8 @@ input[type="radio"][name="clic-parametres"] {
 }
 
 #ligne-login:has(#clic-modif-login:checked) ~ #formulaire-login {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .section_paramètre {
