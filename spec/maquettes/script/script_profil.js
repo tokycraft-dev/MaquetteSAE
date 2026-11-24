@@ -1,11 +1,13 @@
+const checkboxLogin = document.getElementById("clic-modif-login");
+
 const boutonLogin = document.querySelector(
     "label[for='clic-modif-login']"
 );
 
 const imageLogin = boutonLogin.querySelector("img");
 
-boutonLogin.addEventListener("click", function() {
-    if (!imageLogin.src.endsWith("stop_modification.png")) {
+checkboxLogin.addEventListener("change", function() {
+    if (checkboxLogin.checked) {
         imageLogin.src = "public/images/stop_modification.png";
     }
     
