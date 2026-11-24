@@ -367,6 +367,13 @@ input[type="radio"][name="clic-parametres"],
 .formulaire-modification .ligne-mdp .visibilité {
     margin: 0;
     flex-shrink: 1;
+    background: none;
+    border: none;
+    line-height: 0;
+}
+
+.formulaire-modification .ligne-mdp .visibilité img {
+    display: block;
 }
 
 .formulaire-modification .ligne-mdp .mdp {
@@ -456,16 +463,6 @@ input[type="radio"][name="clic-parametres"],
 }
 
 .modification img {
-    height: 3em;
-    width: auto;
-}
-
-.visibilité {
-    background: none;
-    border: none;
-}
-
-.visibilité img {
     height: 3em;
     width: auto;
 }
