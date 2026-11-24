@@ -366,6 +366,7 @@ input[type="radio"][name="clic-parametres"],
 
 .formulaire-modification .ligne-mdp .visibilité {
     margin: 0;
+    flex-shrink: 1;
 }
 
 .formulaire-modification .ligne-mdp .mdp {
