@@ -1,0 +1,228 @@
+html{
+    background-color: #17171f;
+}
+
+#nav_horizontale{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.15em solid #310075;
+}
+
+#nav_horizontale ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    width: 80%;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+#nav_verticale ul{
+    display: flex;
+    min-height: 60%;
+    justify-content: space-between;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+    width: 75%;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+#nav_verticale ul li label{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#menu{
+    justify-content: flex-end;
+    margin-right: 2em;
+}
+
+#nav_horizontale ul li a{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+p{
+    color: #ffffff;
+}
+
+h1 {
+    color: transparent;
+    font: italic 650 6.5vmin 'Orbitron', sans-serif;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(#fff 35%, #2de2e6 50%, 
+    #f222ff 50%, #ffd319 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    filter: drop-shadow(0 0 14px #f222ff);
+}
+
+h2 {
+    color: transparent;
+    font: italic 450 4.5vmin 'Orbitron', sans-serif;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(#fff 35%, #2de2e6 50%, 
+    #f222ff 50%, #ffd319 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    filter: drop-shadow(0 0 14px #f222ff);
+}
+
+#imageProfil{
+    width: 10em;
+    height: auto;
+}
+
+#imageProfilParamètres{
+    width: 18em;
+    height: auto;
+}
+
+#imageLogo{
+    width: 5em;
+    height: auto;
+}
+
+#paramètres{
+    display: flex;
+    flex-direction: row;
+}
+
+#nav_verticale{
+    min-height: 60%;
+    justify-content: space-between;
+    border-right: 0.15em solid #310075;
+    width: 25%;
+}
+
+footer {
+    border-top: 0.15em solid #310075;
+}
+
+input[type="radio"][name="clic-parametres"] {
+    display: none;
+}
+
+.section_paramètre {
+    display: none;
+    margin-left: 2em;;
+}
+
+.section_paramètre form div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.75em;;
+}
+
+.section_paramètre form div p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2em;
+}
+
+.section_paramètre form div p img{
+    margin-left: 0.75em;
+}
+
+.section_paramètre form div button {
+    margin-right: 1em;
+}
+
+.section_paramètre h2 {
+    font-size: 45px;
+}
+
+#clic-compte:checked ~ #contenu_paramètre #compte { 
+    display: block; 
+}
+
+#clic-profil:checked ~ #contenu_paramètre #profil { 
+    display: block; 
+}
+
+#clic-preferences:checked ~ #contenu_paramètre #preferences { 
+    display: block; 
+}
+
+#clic-déconnexion:checked ~ #contenu_paramètre #déconnexion { 
+    display: block; 
+}
+
+#clic-compte:checked ~ #nav_verticale label[for="clic-compte"],
+#clic-profil:checked ~ #nav_verticale label[for="clic-profil"],
+#clic-preferences:checked ~ #nav_verticale label[for="clic-preferences"],
+#clic-déconnexion:checked ~ #nav_verticale label[for="clic-déconnexion"] {
+    color: #00e5ff;
+    font-weight: bold;
+}
+
+#paramètres {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 75vh;
+    width: 100%;
+}
+
+.lien_navigation:not([id="dernier"]):not([id="premier"]) {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    border-bottom: 0.05em solid #240b4a;
+    flex:1;
+}
+
+.lien_navigation[id="dernier"] {
+    padding-top: 3em;
+}
+
+.modification {
+    background: none;
+    border: none;
+}
+
+.modification img {
+    height: 3em;
+    width: auto;
+}
+
+.visibilité {
+    background: none;
+    border: none;
+}
+
+.visibilité img {
+    height: 3em;
+    width: auto;
+}
+
+#bouton_déconnexion {
+    background: none;
+    border: 3px solid #767676;
+    color: #767676;
+    border-radius: 8px;
+    margin-bottom: 2em;
+}
+
+#bouton_supression {
+    background: none;
+    border: 3px solid #ff0000;
+    color: #ff0000;
+    border-radius: 8px;
+    margin-bottom: 2em;
+}
+
