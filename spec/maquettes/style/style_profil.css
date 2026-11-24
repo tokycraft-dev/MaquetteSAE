@@ -361,17 +361,19 @@ input[type="radio"][name="clic-parametres"],
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    align-items: stretch;
+    align-items: center;
     box-sizing: border-box;
     min-width: 0;
 }
 
 .formulaire-modification .ligne-mdp .visibilité {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     margin: 0;
     padding: 0;
-    flex: 0 0 auto;
+    flex: 0 0 2.5em;
+    width: 2.5em;
+    align-self: stretch;
     background: none;
     border: none;
     line-height: 0;
@@ -379,10 +381,11 @@ input[type="radio"][name="clic-parametres"],
 
 .formulaire-modification .ligne-mdp .visibilité img {
     display: block;
-    width: auto;
+    width: 100%;
     height: 100%;
-    max-width: 3em;
-    object-fit: contain;
+    max-width: none;
+    object-fit: cover;
+    object-position: center;
 }
 
 .formulaire-modification .ligne-mdp .mdp {
@@ -396,6 +399,7 @@ input[type="radio"][name="clic-parametres"],
     border: none;
     flex: 1;
     min-width: 0;
+    width: 0;
     box-sizing: border-box;
 }
 
@@ -423,6 +427,12 @@ input[type="radio"][name="clic-parametres"],
     font-weight: 700;
     -webkit-text-stroke: 0;
     color: #00e5ffa0;
+}
+
+.formulaire-modification .texte,
+.formulaire-modification .ligne-mdp {
+    width: calc(100% - 10em);
+    box-sizing: border-box;
 }
 
 #clic-compte:checked ~ #contenu_paramètre #compte { 
