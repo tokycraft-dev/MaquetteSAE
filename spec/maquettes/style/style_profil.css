@@ -352,12 +352,29 @@ input[type="radio"][name="clic-parametres"],
     background: #3c0e4266;
 }
 
-.formulaire-modification .ligne-mdp visibilité {
+.formulaire-modification .ligne-mdp {
+    border: 1px solid #00e5ff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00e5ff80;
+    background: #3c0e4266;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+}
+
+.formulaire-modification .ligne-mdp .visibilité {
     margin-left: 0;
 }
 
 .formulaire-modification .ligne-mdp .mdp {
     margin-right: 0;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    -webkit-text-stroke: 0;
+    padding: 0.75em 0.5em;
+    margin: 1em 5em;
+    color: #ff2ef5;
+    background: transparent;
 }
 
 .formulaire-modification .btn {
