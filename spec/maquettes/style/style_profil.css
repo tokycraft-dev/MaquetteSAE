@@ -362,11 +362,16 @@ input[type="radio"][name="clic-parametres"],
     flex-direction: row;
     overflow: hidden;
     align-items: stretch;
+    box-sizing: border-box;
+    min-width: 0;
 }
 
 .formulaire-modification .ligne-mdp .visibilité {
+    display: flex;
+    align-items: stretch;
     margin: 0;
-    flex-shrink: 1;
+    padding: 0;
+    flex: 0 0 auto;
     background: none;
     border: none;
     line-height: 0;
@@ -374,6 +379,10 @@ input[type="radio"][name="clic-parametres"],
 
 .formulaire-modification .ligne-mdp .visibilité img {
     display: block;
+    width: auto;
+    height: 100%;
+    max-width: 3em;
+    object-fit: contain;
 }
 
 .formulaire-modification .ligne-mdp .mdp {
@@ -385,7 +394,9 @@ input[type="radio"][name="clic-parametres"],
     color: #ff2ef5;
     background: transparent;
     border: none;
-    flex-grow: 1;
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 .formulaire-modification .btn {
