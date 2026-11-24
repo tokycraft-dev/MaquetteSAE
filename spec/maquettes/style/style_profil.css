@@ -334,7 +334,9 @@ input[type="radio"][name="clic-parametres"],
 
 .formulaire-modification input {
     border: 1px solid #00e5ff;
-    padding: 1em 0.5em;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    padding: 0.75em 0.5em;
     margin: 1em 5em;
     backdrop-filter: blur(10px);
     color: #ff2ef5;
@@ -345,6 +347,8 @@ input[type="radio"][name="clic-parametres"],
 
 .formulaire-modification .btn {
     border: 1px solid #00e5ff;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
     padding: 1em 0.5em;
     margin: 1.5em 2.5em;
     color: #00e5ff;
@@ -355,6 +359,8 @@ input[type="radio"][name="clic-parametres"],
 }
 
 .formulaire-modification input::placeholder {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
     color: #00e5ff80;
 }
 
