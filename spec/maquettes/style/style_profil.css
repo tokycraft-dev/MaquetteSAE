@@ -255,11 +255,11 @@ input[type="radio"][name="clic-parametres"],
     outline-offset: 4px;
 }
 
-#formulaire-login {
+.formulaire-modification {
     display: none;
 }
 
-#ligne-login:has(#clic-modif-login:checked) ~ #formulaire-login {
+.ligne:has(.checkbox-modif:checked) ~ .formulaire-modification {
     display: flex;
     flex-direction: column;
 }
