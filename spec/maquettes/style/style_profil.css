@@ -337,8 +337,7 @@ input[type="radio"][name="clic-parametres"],
     align-content: center;
 }
 
-.formulaire-modification .texte,
-.formulaire-modification .ligne-mdp {
+.formulaire-modification .texte {
     border: 1px solid #00e5ff;
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
