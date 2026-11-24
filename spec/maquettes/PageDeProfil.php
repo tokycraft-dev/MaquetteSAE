@@ -78,9 +78,30 @@
 					<form action='controleur/modif_compte.php' method='POST' id='formulaire-login' class='formulaire-modification'>
 						<h3> Formulaire de modification de Login </h3>
 						<input type='text' name='identifiant' aria-label="Identifiant" placeholder='Identifiant' required>
-						<input type='text' name='confirmation' aria-label="Confirmation Identifiant" placeholder='Confirmer Identifiant' required>
+						<input type='text' name='confirmation_identifiant' aria-label="Confirmation Identifiant" placeholder='Confirmer Identifiant' required>
 						<input type='password' name='motdepasse' aria-label="Mot de passe" placeholder='Mot de passe' required>
 						<button type='submit' class='btn'>Modifier l'identifiant</button>
+					</form>
+				</div>
+				<div>
+					<div id='ligne-email' class='ligne'>
+						<?php
+							if ($_SESSION['email'] === null) {
+		                		echo "<p> E-mail: renseigner votre e-mail </p>";
+							}
+							else {
+		                		echo "<p> E-mail: ".$_SESSION['email']."</p>";
+							}
+						?>
+						<input type='checkbox' id='clic-modif-email' class='checkbox-modif'>
+						<label class='modification' for='clic-modif-email'> <img src='public/images/modification.png' width=420 height=420 alt='image du bouton de modification'> </label>
+					</div>
+					<form action='controleur/modif_compte.php' method='POST' id='formulaire-email' class='formulaire-modification'>
+						<h3> Formulaire de modification de l'e-mail </h3>
+						<input type='text' name='email' aria-label="E-mail" placeholder='E-mail' required>
+						<input type='text' name='confirmation_email' aria-label="Confirmation E-mail" placeholder='Confirmer E-mail' required>
+						<input type='password' name='motdepasse' aria-label="Mot de passe" placeholder='Mot de passe' required>
+						<button type='submit' class='btn'>Modifier l'e-mail lier au compte</button>
 					</form>
 				</div>
 				<div>
