@@ -310,7 +310,7 @@ input[type="radio"][name="clic-parametres"],
     -webkit-text-stroke: 0.25px #a51aa0;
 }
 
-#contenu_paramètre h2 {
+#contenu_paramètre h2, #contenu_paramètre h3 {
     -webkit-text-stroke: 0.5px #a51aa0;
 }
 
