@@ -106,12 +106,6 @@
 				</div>
 				<div>
 					<form action='' method='POST'>
-						<p> E-mail: &ltUtilisateur@gmail.com&gt </p>
-						<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
-					</form>
-				</div>
-				<div>
-					<form action='' method='POST'>
 						<p> Mot de passe: &lt**********&gt </p>
 						<button type="button" class="visibilité"> <img src="public/images/visibilité.png" width=315 height="315"  alt="image du bouton de visibilité du mot de passe"> </button>
 						<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
