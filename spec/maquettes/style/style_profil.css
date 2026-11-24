@@ -239,7 +239,8 @@ footer {
 }
 
 input[type="radio"][name="clic-parametres"],
-.checkbox-modif {
+.checkbox-modif,
+.checkbox-visibilite {
     position: absolute;
     opacity: 0;
     width: 1px;
@@ -250,7 +251,8 @@ input[type="radio"][name="clic-parametres"],
 #clic-profil:focus-visible ~ #nav_verticale label[for="clic-profil"],
 #clic-preferences:focus-visible ~ #nav_verticale label[for="clic-preferences"],
 #clic-déconnexion:focus-visible ~ #nav_verticale label[for="clic-déconnexion"],
-.checkbox-modif:focus-visible + .modification {
+.checkbox-modif:focus-visible + .modification,
+.checkbox-visibilite:focus-visible + .visibilite {
     outline: 3px solid #00e5ff;
     outline-offset: 4px;
 }
