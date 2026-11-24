@@ -372,7 +372,7 @@ input[type="radio"][name="clic-parametres"],
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
     -webkit-text-stroke: 0;
-    color: #00e5ff80;
+    color: #00e5ffa0;
 }
 
 #clic-compte:checked ~ #contenu_paramètre #compte { 
