@@ -307,19 +307,19 @@ input[type="radio"][name="clic-parametres"],
 }
 
 #contenu_paramètre * {
-    -webkit-text-stroke: 0.25px #a51aa0;
+    -webkit-text-stroke: 0.5px #a51aa0;
 }
 
 #contenu_paramètre h2, #contenu_paramètre h3 {
-    -webkit-text-stroke: 0.75px #a51aa0;
+    -webkit-text-stroke: 1.25px #a51aa0;
 }
 
 #contenu_paramètre #bouton_déconnexion {
-    -webkit-text-stroke: 0.25px #707070;
+    -webkit-text-stroke: 0.5px #707070;
 }
 
 #contenu_paramètre #bouton_supression {
-    -webkit-text-stroke: 0.25px #ff1010;
+    -webkit-text-stroke: 0.5px #ff1010;
 }
 
 .formulaire-modification {
