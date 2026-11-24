@@ -375,7 +375,7 @@ input[type="radio"][name="clic-parametres"],
     flex: 0 0 2.5em;
     width: 2.5em;
     align-self: stretch;
-    background: none;
+    background: #00e5ff;
     border: none;
     overflow: hidden;
     border-radius: 0 7px 7px 0;
