@@ -358,7 +358,7 @@ input[type="radio"][name="clic-parametres"],
     background: #3c0e4266;
     backdrop-filter: blur(10px);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .formulaire-modification .ligne-mdp .visibilité {
