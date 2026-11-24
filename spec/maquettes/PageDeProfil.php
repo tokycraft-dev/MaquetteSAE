@@ -79,7 +79,11 @@
 						<h3> Formulaire de modification de Login </h3>
 						<input type='text' name='identifiant' aria-label="Identifiant" placeholder='Identifiant' required>
 						<input type='text' name='confirmation_identifiant' aria-label="Confirmation Identifiant" placeholder='Confirmer Identifiant' required>
-						<input type='password' name='motdepasse' aria-label="Mot de passe" placeholder='Mot de passe' required>
+						<div id='ligne-mdp-login' class='ligne-mdp'>
+							<input type='password' name='motdepasse' aria-label="Mot de passe" placeholder='Mot de passe' required>
+							<input type='checkbox' id='clic-visibilite-login' class='checkbox-visibilite'>
+							<label class='visibilité' for='clic-visibilite-login'> <img src='public/images/visibilité.png' width=315 height=315 alt='image du bouton de visibilité du mot de passe'> </label>
+						</div>
 						<button type='submit' class='btn'>Modifier l'identifiant</button>
 					</form>
 				</div>
