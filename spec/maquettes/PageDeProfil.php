@@ -113,10 +113,29 @@
 					</form>
 				</div>
 				<div>
-					<form action='' method='POST'>
-						<p> Mot de passe: &lt**********&gt </p>
-						<button type="button" class="visibilité"> <img src="public/images/visibilité.png" width=315 height="315"  alt="image du bouton de visibilité du mot de passe"> </button>
-						<button type="button" class="modification"> <img src="public/images/modification.png" width=420 height=420 alt="image du bouton de modification"> </button>
+					<div id='ligne-mdp' class='ligne'>
+						<p> Mot de passe: ******** </p>
+						<input type='checkbox' id='clic-modif-mdp' class='checkbox-modif'>
+						<label class='modification' for='clic-modif-mdp'> <img src='public/images/modification.png' width=420 height=420 alt='image du bouton de modification'> </label>
+					</div>
+					<form action='controleur/modif_compte.php' method='POST' id='formulaire-mdp' class='formulaire-modification'>
+						<h3> Formulaire de modification du mot de passe </h3>
+						<div id='ligne-mdp-mdp' class='ligne-mdp'>
+							<input type='password' name='motdepasse' aria-label="Mot de passe actuel" placeholder='Mot de passe actuel' class='mdp' required>
+							<input type='checkbox' id='clic-visibilite-mdp' class='checkbox-visibilite'>
+							<label class='visibilité' for='clic-visibilite-mdp'> <img src='public/images/visibilité.png' width=315 height=315 alt='image du bouton de visibilité du mot de passe'> </label>
+						</div>
+						<div id='ligne-mdp-nouveau-mdp' class='ligne-mdp'>
+							<input type='password' name='nouveaumotdepasse' aria-label="Nouveau mot de passe" placeholder='Nouveau mot de passe' class='mdp' required>
+							<input type='checkbox' id='clic-visibilite-nouveau-mdp' class='checkbox-visibilite'>
+							<label class='visibilité' for='clic-visibilite-nouveau-mdp'> <img src='public/images/visibilité.png' width=315 height=315 alt='image du bouton de visibilité du mot de passe'> </label>
+						</div>
+						<div id='ligne-mdp-nouveau-mdp-confirmation' class='ligne-mdp'>
+							<input type='password' name='nouveaumotdepasseconfirmation' aria-label="Confirmer le nouveau mot de passe" placeholder='Confirmer le nouveau mot de passe' class='mdp' required>
+							<input type='checkbox' id='clic-visibilite-nouveau-mdp-confirmation' class='checkbox-visibilite'>
+							<label class='visibilité' for='clic-visibilite-nouveau-mdp-confirmation'> <img src='public/images/visibilité.png' width=315 height=315 alt='image du bouton de visibilité du mot de passe'> </label>
+						</div>
+						<button type='submit' class='btn'>Modifier le mot de passe du compte</button>
 					</form>
 				</div>
 			</section> 
