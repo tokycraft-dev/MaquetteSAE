@@ -228,7 +228,7 @@ button {
 }
 
 #nav_verticale{
-    min-height: 60%;
+    height: 60%;
     justify-content: space-between;
     border-right: 0.15em solid #ff2ef5;
     width: 25%;
@@ -255,10 +255,6 @@ input[type="radio"][name="clic-parametres"],
 .checkbox-visibilite:focus-visible + .visibilité {
     outline: 3px solid #00e5ff;
     outline-offset: 4px;
-}
-
-#nav_verticale * {
-    position: absolute;
 }
 
 .formulaire-modification {
