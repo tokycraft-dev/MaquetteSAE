@@ -171,18 +171,21 @@
 					<div id='ligne-login' class='ligne'>
 						<?php
 							if ($_SESSION['description'] === null) {
-		                		echo "<p> Description: Ajouter une description </p>";
+		                		echo "<p> Description: Ajouter une description </p>>
+									  <input type='checkbox' id='clic-modif-description' class='checkbox-modif'>
+								      <label class='modification' for='clic-modif-description'> <img src='public/images/modification.png' width=420 height=420 alt='image du bouton de modification'> </label>
+									  </div>";
 							}
 							else {
-		                		echo "<p> Description: </p>";
+		                		echo "<p> Description: </p>
+									  <input type='checkbox' id='clic-modif-description' class='checkbox-modif'>
+								      <label class='modification' for='clic-modif-description'> <img src='public/images/modification.png' width=420 height=420 alt='image du bouton de modification'> </label>
+									  </div>";
 								echo "<article id='description'>
 									  	<p>".$_SESSION['description']."</p>
 									  </article>";
 							}
 						?>
-						<input type='checkbox' id='clic-modif-description' class='checkbox-modif'>
-						<label class='modification' for='clic-modif-description'> <img src='public/images/modification.png' width=420 height=420 alt='image du bouton de modification'> </label>
-					</div>
 					<form action='controleur/modif_profil.php' method='POST' id='formulaire-description' class='formulaire-modification'>
 						<h3> Formulaire de modification de description </h3>
 						<input type='text' name='pseudo' aria-label="Pseudo" placeholder='Pseudo' class='texte' required>
