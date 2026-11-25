@@ -186,7 +186,7 @@
 					<form action='controleur/modif_profil.php' method='POST' id='formulaire-description' class='formulaire-modification'>
 						<h3> Formulaire de modification de description </h3>
 						<input type='text' name='pseudo' aria-label="Pseudo" placeholder='Pseudo' class='texte' required>
-						<textarea name='description' rows='15' aria-label='Entrez votre description' placeholder='Entrez votre description' class='long-texte' required></textarea>
+						<textarea name='description' rows='8' aria-label='Entrez votre description' placeholder='Entrez votre description' class='long-texte' required></textarea>
 						<div id='ligne-mdp-pseudo' class='ligne-mdp'>
 							<input type='password' name='motdepasse' aria-label="Mot de passe" placeholder='Mot de passe' class='mdp' required>
 							<input type='checkbox' id='clic-visibilite-description' class='checkbox-visibilite'>
