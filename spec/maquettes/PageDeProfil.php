@@ -142,7 +142,7 @@
 			<section id="profil" class="section_paramètre">
 				<h2> Paramètrage du profil </h2>
 				<div>
-					<div id='ligne-login' class='ligne'>
+					<div id='ligne-photo' class='ligne'>
 						<?php
 		                	if ($_SESSION['photo'] == true) {
 								echo "<p> Photo de profil: <img class='image_ronde' src='public/images/photoProfil_".$_SESSION['id'].".png' alt='Photo de profil' width=500 height=500 id='imageProfil'> </p>";
@@ -168,7 +168,27 @@
 					</form>
 				</div>
 				<div>
-					<div id='ligne-login' class='ligne'>
+					<div id='ligne-pseudo' class='ligne'>
+						<?php
+		                	echo "<p> Pseudo: ".$_SESSION['pseudo']."</p>";
+						?>
+						<input type='checkbox' id='clic-modif-pseudo' class='checkbox-modif'>
+						<label class='modification' for='clic-modif-pseudo'> <img src='public/images/modification.png' width=420 height=420 alt='image du bouton de modification'> </label>
+					</div>
+					<form action='controleur/modif_profil.php' method='POST' id='formulaire-pseudo' class='formulaire-modification'>
+						<h3> Formulaire de modification du pseudo </h3>
+						<input type='text' name='pseudo' aria-label="Pseudo" placeholder='Pseudo' class='texte' required>
+						<input type='text' name='confirmation_pseudo' aria-label="Confirmation Pseudo" placeholder='Confirmer le pseudo' class='texte' required>
+						<div id='ligne-mdp-pseudo' class='ligne-mdp'>
+							<input type='password' name='motdepasse' aria-label="Mot de passe" placeholder='Mot de passe' class='mdp' required>
+							<input type='checkbox' id='clic-visibilite-pseudo' class='checkbox-visibilite'>
+							<label class='visibilité' for='clic-visibilite-pseudo'> <img src='public/images/visibilité.png' width=315 height=315 alt='image du bouton de visibilité du mot de passe'> </label>
+						</div>
+						<button type='submit' class='btn'>Modifier le pseudo</button>
+					</form>
+				</div>
+				<div>
+					<div id='ligne-description' class='ligne'>
 						<?php
 							if ($_SESSION['description'] === null) {
 		                		echo "<p> Description: Ajouter une description </p>>
@@ -196,26 +216,6 @@
 							<label class='visibilité' for='clic-visibilite-description'> <img src='public/images/visibilité.png' width=315 height=315 alt='image du bouton de visibilité du mot de passe'> </label>
 						</div>
 						<button type='submit' class='btn'>Modifier la description</button>
-					</form>
-				</div>
-				<div>
-					<div id='ligne-login' class='ligne'>
-						<?php
-		                	echo "<p> Pseudo: ".$_SESSION['pseudo']."</p>";
-						?>
-						<input type='checkbox' id='clic-modif-pseudo' class='checkbox-modif'>
-						<label class='modification' for='clic-modif-pseudo'> <img src='public/images/modification.png' width=420 height=420 alt='image du bouton de modification'> </label>
-					</div>
-					<form action='controleur/modif_profil.php' method='POST' id='formulaire-pseudo' class='formulaire-modification'>
-						<h3> Formulaire de modification du pseudo </h3>
-						<input type='text' name='pseudo' aria-label="Pseudo" placeholder='Pseudo' class='texte' required>
-						<input type='text' name='confirmation_pseudo' aria-label="Confirmation Pseudo" placeholder='Confirmer le pseudo' class='texte' required>
-						<div id='ligne-mdp-pseudo' class='ligne-mdp'>
-							<input type='password' name='motdepasse' aria-label="Mot de passe" placeholder='Mot de passe' class='mdp' required>
-							<input type='checkbox' id='clic-visibilite-pseudo' class='checkbox-visibilite'>
-							<label class='visibilité' for='clic-visibilite-pseudo'> <img src='public/images/visibilité.png' width=315 height=315 alt='image du bouton de visibilité du mot de passe'> </label>
-						</div>
-						<button type='submit' class='btn'>Modifier le pseudo</button>
 					</form>
 				</div>
 			</section> 
