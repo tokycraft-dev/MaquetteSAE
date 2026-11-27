@@ -14,7 +14,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Page de Profil</title>
-	<link rel="stylesheet" href="style/base.css">
 	<link rel="stylesheet" href="style/style_profil.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap">
 	<script src="script/script.js" defer></script>
