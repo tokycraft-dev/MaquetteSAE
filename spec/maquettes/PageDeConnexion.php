@@ -1,3 +1,26 @@
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+$messages_erreur = [
+        '1' => 'Mot de passe incorrect.',
+        '2' => 'Identifiant inconnu.',
+        '3' => 'Erreur technique, réessayez plus tard.',
+];
+
+$erreur = '';
+if (isset($_GET['erreur']) && isset($messages_erreur[$_GET['erreur']])) {
+    $erreur = $messages_erreur[$_GET['erreur']];
+}
+
+$succes = '';
+if (isset($_GET['inscription']) && $_GET['inscription'] == '1') {
+    $succes = 'Inscription réussie, vous pouvez vous connecter.';
+}
+?>
+<!DOCTYPE html>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -14,11 +37,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style/style_formulaire.css">
-    <?php
-        if (session_status() == PHP_SESSION_NONE) {
-            session_start();
-        }
-    ?>
+<!--    --><?php
+//        if (session_status() == PHP_SESSION_NONE) {
+//            session_start();
+//        }
+//    ?>
 </head>
 <body>
     <div class="stars"></div>
@@ -41,7 +64,13 @@
     <div class="wrapper">
         <form action="controleur/connexion.php" method="POST">
             <h1>Connexion</h1>
+            <?php if ($erreur): ?>
+                <p class="message-erreur"><?= $erreur ?></p>
+            <?php endif; ?>
 
+            <?php if ($succes): ?>
+                <p class="message-succes"><?= $succes ?></p>
+            <?php endif; ?>
             <div class="input-a">
                 <input type="text" name="identifiant" aria-label="Identifiant" placeholder="Identifiant" required>
                 <i class="bxf bx-user"></i> <!-- icon utilisateur -->
