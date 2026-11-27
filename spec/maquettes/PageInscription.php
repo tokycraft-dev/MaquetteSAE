@@ -1,3 +1,20 @@
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+$messages_erreur = [
+        '1' => 'Indentifiant non disponible',
+        '2' => 'Erreur technique, réessayez plus tard.',
+        '3' => 'Le mot de passe et le mot de passe de confirmation doivent être les même',
+        '4' => 'Le mot de passe doit contenir au moins 1 Majuscule, 1 minuscule, 1 chiffre, 1 caractère spécial et faire au moins 8 caractères de long',
+];
+
+$erreur = '';
+if (isset($_GET['erreur']) && isset($messages_erreur[$_GET['erreur']])) {
+    $erreur = $messages_erreur[$_GET['erreur']];
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -14,11 +31,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style/style_formulaire.css">
-    <?php
-        if (session_status() == PHP_SESSION_NONE) {
-            session_start();
-        }
-    ?>
 </head>
 <body>
     <div class="stars"></div>
@@ -45,6 +57,9 @@
     <div class="wrapper">
         <form action="controleur/inscription.php" method="POST">
             <h1>Inscription</h1>
+            <?php if ($erreur): ?>
+                <p class="message-erreur"><?= $erreur ?></p>
+            <?php endif; ?>
 
             <div class="input-a">
                 <input type="text" name="identifiant" aria-label="identifiant" placeholder="Identifiant" required>
