@@ -1,11 +1,12 @@
 <?php
-    include_once("fonctions/fonctions_verif.php"
+    include_once("fonctions/fonctions_verif.php")
     if (session_status() == PHP_SESSION_NONE) {
         session_start();
     }
     
-    if (! verif_role('none') {
+    if (! verif_role('none')) {
         header("Location: PageDeProfil.php");
+        exit;
     }
     
     $messages_erreur = [
