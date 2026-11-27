@@ -108,14 +108,14 @@
 					</div>
 					<form action='controleur/modif_compte.php' method='POST' id='formulaire-email' class='formulaire-modification'>
 						<h3> Formulaire de modification de l'e-mail </h3>
-						<input type='text' name='email' aria-label="E-mail" placeholder='E-mail' class='texte' required>
-						<input type='text' name='confirmation_email' aria-label="Confirmation E-mail" placeholder='Confirmer E-mail' class='texte' required>
+						<input type='email' name='email' aria-label="E-mail" placeholder='E-mail' class='texte' required>
+						<input type='email' name='confirmation_email' aria-label="Confirmation E-mail" placeholder='Confirmer E-mail' class='texte' required>
 						<div id='ligne-mdp-login' class='ligne-mdp'>
 							<input type='password' name='motdepasse' aria-label="Mot de passe" placeholder='Mot de passe' class='mdp' required>
 							<input type='checkbox' id='clic-visibilite-email' class='checkbox-visibilite'>
 							<label class='visibilité' for='clic-visibilite-email'> <img src='public/images/visibilité.png' width=315 height=315 alt='image du bouton de visibilité du mot de passe'> </label>
 						</div>
-						<button type='submit' class='btn'>Modifier l'e-mail lier au compte</button>
+						<button type='submit' class='btn'>Modifier l'e-mail lié au compte</button>
 					</form>
 				</div>
 				<div>
