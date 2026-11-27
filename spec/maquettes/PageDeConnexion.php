@@ -10,8 +10,8 @@
     }
     
     $messages_erreur = [
-            '1' => 'Mot de passe incorrect.',
-            '2' => 'Identifiant inconnu.',
+            '1' => 'Identifiant ou mot de passe incorrect.',
+            '2' => 'Identifiant ou mot de passe incorrect.',
             '3' => 'Erreur technique, réessayez plus tard.',
     ];
     
