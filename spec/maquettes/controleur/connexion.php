@@ -12,7 +12,6 @@
         $table = "utilisateur";
         if (in($login, $connexion, $base, $table)){
             if (correct($mdp, $login, $connexion, $base, $table)){
-                session_start();
                 $sql = "SELECT * FROM $table WHERE login = '$login'";
                 $db = mysqli_select_db($connexion, $base);
                 if ($db) {
