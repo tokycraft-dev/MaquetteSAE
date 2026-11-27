@@ -1,19 +1,23 @@
 <?php
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
-
-$messages_erreur = [
-        '1' => 'Indentifiant non disponible',
-        '2' => 'Erreur technique, réessayez plus tard.',
-        '3' => 'Le mot de passe et le mot de passe de confirmation doivent être les même',
-        '4' => 'Le mot de passe doit contenir au moins 1 Majuscule, 1 minuscule, 1 chiffre, 1 caractère spécial et faire au moins 8 caractères de long',
-];
-
-$erreur = '';
-if (isset($_GET['erreur']) && isset($messages_erreur[$_GET['erreur']])) {
-    $erreur = $messages_erreur[$_GET['erreur']];
-}
+    include_once("fonctions/fonctions_verif.php"
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    
+    if (! verif_role('none') {
+        header("Location: PageDeProfil.php");
+    }
+    
+    $messages_erreur = [
+            '1' => 'Indentifiant non disponible',
+            '2' => 'Erreur technique, réessayez plus tard.',
+            '3' => 'Le mot de passe et le mot de passe de confirmation doivent être les même',
+            '4' => 'Le mot de passe doit contenir au moins 1 Majuscule, 1 minuscule, 1 chiffre, 1 caractère spécial et faire au moins 8 caractères de long',
+    ];
+    
+    $erreur = '';
+    if (isset($_GET['erreur']) && isset($messages_erreur[$_GET['erreur']])) {
+        $erreur = $messages_erreur[$_GET['erreur']];
+    }
 ?>
 <!DOCTYPE html>
 <html lang="fr">
