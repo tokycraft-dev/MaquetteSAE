@@ -14,20 +14,25 @@
                     $result = inscription($login, $mdp, $connexion, $base, $table);
                     if ($result == 0) {
                         header("location: ../PageDeConnexion.php?inscription=1");
+                        exit;
                     }
                     else {
                         header("location: ../PageInscription.php?erreur=2");
+                        exit;
                     }
                 }
                 else    {
                     header("location: ../PageInscription.php?erreur=4");
+                    exit;
                 }
             }
             else {
                     header("location: ../PageInscription.php?erreur=3");
+                    exit;
             }
         }
         else {
             header("Location: ../PageInscription.php?erreur=1");
+            exit;
         }
     }
