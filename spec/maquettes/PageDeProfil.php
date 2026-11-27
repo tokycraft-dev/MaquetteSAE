@@ -1,11 +1,12 @@
 <?php
-    include_once("fonctions/fonctions_verif.php"
+    include_once("fonctions/fonctions_verif.php")
     if (session_status() == PHP_SESSION_NONE) {
         session_start();
     }
     
-    if (! verif_role('any') {
+    if (! verif_role('any')) {
         header("Location: index.php");
+		exit;
     }
 ?>
 <!DOCTYPE html>
