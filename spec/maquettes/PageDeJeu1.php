@@ -1,5 +1,5 @@
 <?php
-    include_once("fonctions/fonctions_verif.php")
+    include_once("fonctions/fonctions_verif.php");
     if (session_status() == PHP_SESSION_NONE) {
         session_start();
     }
