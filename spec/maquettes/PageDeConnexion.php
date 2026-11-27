@@ -1,23 +1,28 @@
 <?php
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
-
-$messages_erreur = [
-        '1' => 'Mot de passe incorrect.',
-        '2' => 'Identifiant inconnu.',
-        '3' => 'Erreur technique, réessayez plus tard.',
-];
-
-$erreur = '';
-if (isset($_GET['erreur']) && isset($messages_erreur[$_GET['erreur']])) {
-    $erreur = $messages_erreur[$_GET['erreur']];
-}
-
-$succes = '';
-if (isset($_GET['inscription']) && $_GET['inscription'] == '1') {
-    $succes = 'Inscription réussie, vous pouvez vous connecter.';
-}
+    include_once("fonctions/fonctions_verif.php"
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+    
+    if (! verif_role('none') {
+        header("Location: PageDeProfil.php");
+    }
+    
+    $messages_erreur = [
+            '1' => 'Mot de passe incorrect.',
+            '2' => 'Identifiant inconnu.',
+            '3' => 'Erreur technique, réessayez plus tard.',
+    ];
+    
+    $erreur = '';
+    if (isset($_GET['erreur']) && isset($messages_erreur[$_GET['erreur']])) {
+        $erreur = $messages_erreur[$_GET['erreur']];
+    }
+    
+    $succes = '';
+    if (isset($_GET['inscription']) && $_GET['inscription'] == '1') {
+        $succes = 'Inscription réussie, vous pouvez vous connecter.';
+    }
 ?>
 <!DOCTYPE html>
 
