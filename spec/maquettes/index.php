@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogue</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/style_index.css">
     <?php
         if (session_status() == PHP_SESSION_NONE) {
