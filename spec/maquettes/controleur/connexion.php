@@ -35,17 +35,21 @@
                     }
                     else {
                         header("Location: ../PageDeConnexion.php?erreur=3");
+                        exit;
                     }
                 }
                 else {
                     header("Location: ../PageDeConnexion.php?erreur=3");
+                    exit;
                 }
             }
             else {
                 header("Location: ../PageDeConnexion.php?erreur=1");
+                exit;
             }
         }
         else {
             header("Location: ../PageDeConnexion.php?erreur=2");
+            exit;
         }
     }
