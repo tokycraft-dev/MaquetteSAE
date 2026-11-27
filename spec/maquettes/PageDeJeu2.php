@@ -1,3 +1,13 @@
+<?php
+    include_once("fonctions/fonctions_verif.php"
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+    
+    if (! verif_role('any') {
+        header("Location: index.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -5,13 +15,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style_jeu.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
-
     <title>Page de jeu</title>
-    <?php
-        if (session_status() == PHP_SESSION_NONE) {
-            session_start();
-        }
-    ?>
+    
 </head>
 <body>
     <div class="stars"></div>
